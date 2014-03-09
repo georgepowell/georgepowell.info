@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MedSystem::Application.config.secret_key_base = '9ed7d9173162e171946ae14c8cfa714009aacf13c46794ba2e94948bfa83494ae011e4ae2ee9ada5025a92a1483ef4963d1505b18206214aca7c348b5fd726ec'
+MedSystem::Application.config.secret_key_base = '9a1f33b2cc26e6c4b766efe8e4698dc48741632c6b43c45ae20fae28aa04f2ca81e9d203fd2e7e9ffa97d091c5681046fd99ca079d43ed85f56e6d4d1e3417bc'
