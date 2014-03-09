@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hut Sample</title>
+	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<ul class="nav navbar-nav">
+					<% if user_signed_in? %>
+					<li><%= link_to 'New', new_student_path, class: 'navbar-brand' %></li>
+					<li><%= link_to 'Students', students_path, class: 'navbar-brand' %></li>
+					<li class='navbar-brand'><%= current_user.email %></li>
+					<li><%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'navbar-brand' %></li>
+					<% else %>
+					<li> <%= link_to 'Log in?', new_user_session_path, class: 'navbar-brand' %> </li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<% flash.each do |name, msg| %>
+		<% if msg.is_a?(String) %>
+		<div class="alert alert-<%= name.to_s == 'notice' ? "success" : "danger" %>">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+		</div>
+		<% end %>
+		<% end %>
+		<%= yield %>
+	</div>
+</body>
+</html>

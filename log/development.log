@@ -1,0 +1,2565 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 17:45:34 +0000
+
+PG::ConnectionBad (FATAL:  role "med_system" does not exist
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4286909221758532361__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 17:50:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 39ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (13.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStudents (20140307182911)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (9.8ms)[0m  [1mCREATE TABLE "students" ("id" serial primary key, "name" character varying(255), "age" integer, "subject" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140307182911"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 18:33:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 42ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:34:04 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.7ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 876ms (Views: 872.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 18:34:05 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 18:34:09 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (37.3ms)
+  Rendered students/new.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 58ms (Views: 50.7ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-07 18:34:17 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "student"=>{"name"=>"George Powell", "age"=>"22", "subject"=>"CS"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.5ms)[0m  INSERT INTO "students" ("age", "created_at", "name", "subject", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["age", 22], ["created_at", Fri, 07 Mar 2014 18:34:17 UTC +00:00], ["name", "George Powell"], ["subject", "CS"], ["updated_at", Fri, 07 Mar 2014 18:34:17 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 16ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-07 18:34:17 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (1.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:34:28 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 18:34:32 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-07 18:35:09 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "student"=>{"name"=>"Ryan Proctor", "age"=>"20", "subject"=>"Sociology"}, "commit"=>"Create Student"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "students" ("age", "created_at", "name", "subject", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["age", 20], ["created_at", Fri, 07 Mar 2014 18:35:09 UTC +00:00], ["name", "Ryan Proctor"], ["subject", "Sociology"], ["updated_at", Fri, 07 Mar 2014 18:35:09 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2014-03-07 18:35:09 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 18:35:09 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 18:35:09 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 18:35:09 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:35:12 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 18:36:35 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (64.5ms)
+  Rendered students/new.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 95ms (Views: 77.2ms | ActiveRecord: 12.9ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-07 18:36:45 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "student"=>{"name"=>"Aidan Daly", "age"=>"21", "subject"=>"History"}, "commit"=>"Create Student"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "students" ("age", "created_at", "name", "subject", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["age", 21], ["created_at", Fri, 07 Mar 2014 18:36:45 UTC +00:00], ["name", "Aidan Daly"], ["subject", "History"], ["updated_at", Fri, 07 Mar 2014 18:36:45 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 11ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/students_controller.rb:31:in `block (2 levels) in create'
+  app/controllers/students_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:39:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.8ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 126ms (Views: 89.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 18:39:03 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 18:39:03 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 18:39:03 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 18:39:06 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (60.7ms)
+  Rendered students/new.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-07 18:39:18 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "student"=>{"name"=>"Tom Wells", "age"=>"20", "subject"=>"Biology"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "students" ("age", "created_at", "name", "subject", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["age", 20], ["created_at", Fri, 07 Mar 2014 18:39:18 UTC +00:00], ["name", "Tom Wells"], ["subject", "Biology"], ["updated_at", Fri, 07 Mar 2014 18:39:18 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 14ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/students_controller.rb:31:in `block (2 levels) in create'
+  app/controllers/students_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:40:01 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:02 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:02 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:02 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 18:40:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 18:40:02 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 18:40:06 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (4.7ms)
+  Rendered students/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-07 18:40:39 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "student"=>{"name"=>"Dan Woodgate", "age"=>"21", "subject"=>"Politics"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "students" ("age", "created_at", "name", "subject", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["age", 21], ["created_at", Fri, 07 Mar 2014 18:40:39 UTC +00:00], ["name", "Dan Woodgate"], ["subject", "Politics"], ["updated_at", Fri, 07 Mar 2014 18:40:39 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:40:39 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:40 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:40 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 18:40:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 18:40:40 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 18:40:40 +0000
+
+
+Started GET "/students/3" for 127.0.0.1 at 2014-03-07 18:41:11 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (3.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered students/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 18:41:15 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 1.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140307190056)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140307190056"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 53ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 125ms (Views: 105.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:34:52 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 11ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 79ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:06 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 80ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:35:12 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#new as HTML
+Completed 401 Unauthorized in 51ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 116ms (Views: 92.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:42:57 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:43:08 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 10ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 82ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:43:09 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:43:09 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:09 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:09 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:43:18 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 6ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 78ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:43:19 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:43:19 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:43:19 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:45:40 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 79ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:41 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:41 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:41 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:45:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:45:41 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepoasdfasdfwell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepoasdfasdfwell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:45:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:26 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:26 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:26 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 19:50:28 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 197ms (Views: 131.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:29 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:29 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:29 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:29 +0000
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-07 19:50:31 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-07 19:50:46 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' LIMIT 1[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 07 Mar 2014 19:50:46 UTC +00:00], ["email", "georgepowell_1@hotmail.co.uk"], ["encrypted_password", "$2a$10$yDx1CENsTt31pt0IhMCRqO0G6xEOyUM88pIBzegsg6VXeFI2Bt.X."], ["updated_at", Fri, 07 Mar 2014 19:50:46 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1[0m  [["last_sign_in_at", Fri, 07 Mar 2014 19:50:46 UTC +00:00], ["current_sign_in_at", Fri, 07 Mar 2014 19:50:46 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Fri, 07 Mar 2014 19:50:46 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 102ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 19:50:46 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (18.0ms)
+  Rendered students/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 39ms (Views: 28.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:46 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:47 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:50:47 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:50:47 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-07 19:51:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (24.6ms)
+  Rendered students/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 202ms (Views: 103.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:15 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:15 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:51:15 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:51:15 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 19:51:18 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 19:51:26 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.6ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:27 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 19:51:27 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 19:51:27 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 19:51:27 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:15:55 +0000
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-07 20:15:58 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KtCSi8cExJb2RVJdvoaJpvrziWFRWWu3D+Le54DeS9c="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 55ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 20:15:58 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:04 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:16:53 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JbebpGPNxiSJwNYxAoGyVRQtcDibksArxeZpVurYr6A=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (2.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 77ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JbebpGPNxiSJwNYxAoGyVRQtcDibksArxeZpVurYr6A=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 78ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:16:54 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:16:57 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JbebpGPNxiSJwNYxAoGyVRQtcDibksArxeZpVurYr6A=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = 1[0m  [["current_sign_in_at", Fri, 07 Mar 2014 20:16:57 UTC +00:00], ["sign_in_count", 2], ["updated_at", Fri, 07 Mar 2014 20:16:57 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 20:16:57 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:05 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:17:14 +0000
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-07 20:41:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zr1VVVxS5z4c3c79nDQmd3QCqImCt6Cljy6wKaSae3A="}
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 20:41:27 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:41:32 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 2639ms
+
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fab04ef88a8>:0x007fab04f039d8>):
+    11:  <div class="container">
+    12:  <div class="navbar-header">
+    13:  <ul class="nav navbar-nav">
+    14:  <li><%= link_to 'Home', root_path, class: 'navbar-brand' %></li>
+    15:  </ul>
+    16:  </div>
+    17:  </div>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__3706675574934654842_70186249506840'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:44:36 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:44:37 +0000
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-07 20:45:12 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gzvhwaMVtqgZ4CiF0gdThJzkYnTjq5SRFlGdZAZg3o4=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.4ms)[0m  [1mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = 1[0m  [["remember_created_at", Fri, 07 Mar 2014 20:45:12 UTC +00:00], ["updated_at", Fri, 07 Mar 2014 20:45:12 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1  [["last_sign_in_at", Fri, 07 Mar 2014 20:16:57 UTC +00:00], ["current_sign_in_at", Fri, 07 Mar 2014 20:45:12 UTC +00:00], ["sign_in_count", 3], ["updated_at", Fri, 07 Mar 2014 20:45:12 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 20:45:12 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.7ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 30ms (Views: 21.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 20:45:18 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:45:31 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-07 20:45:33 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (3.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1  [["last_sign_in_at", Fri, 07 Mar 2014 20:45:12 UTC +00:00], ["current_sign_in_at", Sun, 09 Mar 2014 11:53:48 UTC +00:00], ["sign_in_count", 4], ["updated_at", Sun, 09 Mar 2014 11:53:48 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mStudent Load (2.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 419ms (Views: 323.4ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:53:49 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 12:14:49 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:01 +0000
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-09 12:23:15 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d7I5ZkWA4lD28BzyLldahlk+OeboJWznkQZB9pFJfws="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = 1[0m  [["remember_created_at", nil], ["updated_at", Sun, 09 Mar 2014 12:23:15 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:23:15 +0000
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:15 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:16 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:19 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hRBUUeYyA/iolk64ZKH1s7498sUxMQASZxe4VjQaVC8=", "user"=>{"email"=>"georgepowell_1@hotmail.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'georgepowell_1@hotmail.co.uk' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1[0m  [["last_sign_in_at", Sun, 09 Mar 2014 11:53:48 UTC +00:00], ["current_sign_in_at", Sun, 09 Mar 2014 12:23:34 UTC +00:00], ["sign_in_count", 5], ["updated_at", Sun, 09 Mar 2014 12:23:34 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 89ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:34 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:27:36 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:28:10 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:28:12 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.6ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:30:52 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:30:55 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (6.7ms)
+  Rendered students/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:30:57 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:30:58 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (4.3ms)
+  Rendered students/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:31:01 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:31:05 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (3.5ms)
+  Rendered students/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:31:06 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:31:31 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:32:11 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:32:17 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:32:19 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:33:14 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:33:15 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (3.7ms)
+  Rendered students/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:36:33 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (3.2ms)
+  Rendered students/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:36:34 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:37:40 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:38:03 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (2.7ms)
+  Rendered students/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:40:43 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:41:20 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:41:24 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:41:36 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.3ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:42:07 +0000
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-09 17:42:11 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.7ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (5.6ms)
+  Rendered students/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:42:19 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.6ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:42:35 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-09 17:42:37 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (4.3ms)
+  Rendered students/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:42:43 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:05 +0000
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-09 17:43:08 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (3.4ms)
+  Rendered students/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/students/1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mpZELsm9Vb4ezWtWuQpiPB26nJO2aUpQirf7KsqshAs=", "student"=>{"name"=>"George Powell", "age"=>"23", "subject"=>"CS"}, "commit"=>"Update Student", "id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "students" SET "age" = $1, "updated_at" = $2 WHERE "students"."id" = 1  [["age", 23], ["updated_at", Sun, 09 Mar 2014 17:43:14 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 12ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:14 +0000
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:43:18 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap_setup.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 17:43:39 +0000
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:44:18 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:44:21 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.7ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:44:23 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (64.1ms)
+  Rendered students/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 80ms (Views: 76.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:44:24 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.8ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:44:28 +0000
+Processing by StudentsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered students/_form.html.erb (3.7ms)
+  Rendered students/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:44:29 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.8ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-09 17:44:30 +0000
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered students/_form.html.erb (3.4ms)
+  Rendered students/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-09 17:44:31 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (1.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 2.1ms)
