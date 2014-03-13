@@ -19,20 +19,13 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
-
-github_user: georgepowell
-linkedin_user: georgepowell
-twitter_user: thegeorgepowell
-googleplus_user: GeorgePowell1
-facebook_user: georgepowell1
-
+email: georgepowell_1@hotmail.co.uk
 
 
 
 navigation:
 - text: Home
-  url: /index.html
+  url: /
 - text: About
   url: /about-me.html
 
@@ -73,18 +66,21 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # post_asides:
 # page_asides:
 
+linkedin_user: georgepowell
+facebook_user: georgepowell1
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: georgepowell
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: thegeorgepowell
 twitter_tweet_button: true
 
 # Google +1
@@ -93,7 +89,7 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: GeorgePowell1
 googleplus_hidden: false
 
 # Pinboard
