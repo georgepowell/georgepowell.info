@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chrome | georgepowell.info]]></title>
   <link href="http://georgepowell.info/blog/categories/chrome/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-03-13T18:52:55+00:00</updated>
+  <updated>2014-03-13T19:49:41+00:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Chrome extension #1: Subnito]]></title>
-    <link href="http://georgepowell.info/blog/2014/03/13/incogno/"/>
+    <link href="http://georgepowell.info/writing/incogno/"/>
     <updated>2014-03-13T13:48:59+00:00</updated>
-    <id>http://georgepowell.info/blog/2014/03/13/incogno</id>
+    <id>http://georgepowell.info/writing/incogno</id>
     <content type="html"><![CDATA[<p>I decided to create a chrome extension last week, it was surprisingly simple. Chrome extensions basically give you a very simple way to inject your own javascript into whatever webpages you like, plus have access to chrome&rsquo;s own APIs for playing with tabs or storing data etc. The whole extension uses nothing but javascript (you can add jquery etc. if you like), and HTML. Even the .manifest file is JSON.</p>
 
 <p>Subnito was my first serious chrome extension. It uses the reddit API to detect if you&rsquo;re browsing an 18+ subreddit on reddit.com and pushes you into incognito mode if so.</p>
