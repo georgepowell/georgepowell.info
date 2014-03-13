@@ -21,6 +21,15 @@ subscribe_email:
 # RSS feeds can list your email address if you like
 email:
 
+github_user: georgepowell
+linkedin_user: georgepowell
+twitter_user: thegeorgepowell
+googleplus_user: GeorgePowell1
+facebook_user: georgepowell1
+
+
+
+
 navigation:
 - text: Home
   url: /index.html
