@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[georgepowell.info]]></title>
+  <link href="http://georgepowell.info/atom.xml" rel="self"/>
+  <link href="http://georgepowell.info/"/>
+  <updated>2014-03-13T09:14:47+00:00</updated>
+  <id>http://georgepowell.info/</id>
+  <author>
+    <name><![CDATA[George Powell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Testing out code rendering]]></title>
+    <link href="http://georgepowell.info/blog/2014/03/12/testing-out-code-rendering/"/>
+    <updated>2014-03-12T20:34:03+00:00</updated>
+    <id>http://georgepowell.info/blog/2014/03/12/testing-out-code-rendering</id>
+    <content type="html"><![CDATA[
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">rectangle</span> <span class="nl">setX:</span> <span class="mi">10</span> <span class="nl">y:</span> <span class="mi">10</span> <span class="nl">width:</span> <span class="mi">20</span> <span class="nl">height:</span> <span class="mi">20</span><span class="p">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># encoding: UTF-8</span>
+</span><span class='line'><span class="c1"># This file is auto-generated from the current state of the database. Instead</span>
+</span><span class='line'><span class="c1"># of editing this file, please use the migrations feature of Active Record to</span>
+</span><span class='line'><span class="c1"># incrementally modify your database, and then regenerate this schema definition.</span>
+</span><span class='line'><span class="c1">#</span>
+</span><span class='line'><span class="c1"># Note that this schema.rb definition is the authoritative source for your</span>
+</span><span class='line'><span class="c1"># database schema. If you need to create the application database on another</span>
+</span><span class='line'><span class="c1"># system, you should be using db:schema:load, not running all the migrations</span>
+</span><span class='line'><span class="c1"># from scratch. The latter is a flawed and unsustainable approach (the more migrations</span>
+</span><span class='line'><span class="c1"># you&#39;ll amass, the slower it&#39;ll run and the greater likelihood for issues).</span>
+</span><span class='line'><span class="c1">#</span>
+</span><span class='line'><span class="c1"># It&#39;s strongly recommended that you check this file into your version control system.</span>
+</span><span class='line'>
+</span><span class='line'><span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Schema</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="ss">version</span><span class="p">:</span> <span class="mi">20140312003719</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># These are extensions that must be enabled in order to support this database</span>
+</span><span class='line'>  <span class="n">enable_extension</span> <span class="s2">&quot;plpgsql&quot;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">create_table</span> <span class="s2">&quot;adjustments&quot;</span><span class="p">,</span> <span class="ss">force</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">integer</span>  <span class="s2">&quot;student_id&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">date</span>     <span class="s2">&quot;adjustment_date&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;notes&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;author&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;updated_at&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">create_table</span> <span class="s2">&quot;review_dates&quot;</span><span class="p">,</span> <span class="ss">force</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">integer</span>  <span class="s2">&quot;student_id&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">date</span>     <span class="s2">&quot;review_date&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;attended&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;author&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;updated_at&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">create_table</span> <span class="s2">&quot;students&quot;</span><span class="p">,</span> <span class="ss">force</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;studentID&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;forename&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;surname&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">date</span>     <span class="s2">&quot;dob&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;email&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_professional&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_academic&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_spld&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_mental_health&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_physical_health&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">boolean</span>  <span class="s2">&quot;mp_see_notes&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;updated_at&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">create_table</span> <span class="s2">&quot;support_programs&quot;</span><span class="p">,</span> <span class="ss">force</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">integer</span>  <span class="s2">&quot;student_id&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">date</span>     <span class="s2">&quot;program_date&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;notes&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;author&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;updated_at&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">create_table</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="ss">force</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;email&quot;</span><span class="p">,</span>                  <span class="ss">default</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;encrypted_password&quot;</span><span class="p">,</span>     <span class="ss">default</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;reset_password_token&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;reset_password_sent_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;remember_created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">integer</span>  <span class="s2">&quot;sign_in_count&quot;</span><span class="p">,</span>          <span class="ss">default</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;current_sign_in_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;last_sign_in_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;current_sign_in_ip&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="s2">&quot;last_sign_in_ip&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;created_at&quot;</span>
+</span><span class='line'>    <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="s2">&quot;updated_at&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">add_index</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;email&quot;</span><span class="o">]</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;index_users_on_email&quot;</span><span class="p">,</span> <span class="ss">unique</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">using</span><span class="p">:</span> <span class="ss">:btree</span>
+</span><span class='line'>  <span class="n">add_index</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;reset_password_token&quot;</span><span class="o">]</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;index_users_on_reset_password_token&quot;</span><span class="p">,</span> <span class="ss">unique</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">using</span><span class="p">:</span> <span class="ss">:btree</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Did you see the news?]]></title>
+    <link href="http://georgepowell.info/blog/2014/03/12/did-you-see-the-news/"/>
+    <updated>2014-03-12T20:22:51+00:00</updated>
+    <id>http://georgepowell.info/blog/2014/03/12/did-you-see-the-news</id>
+    <content type="html"><![CDATA[<h3>Aparently there&rsquo;s a plane missing</h3>
+
+<p>The international hunt for the missing Malaysia Airlines flight MH370 expanded to cover 27,000 square nautical miles on Wednesday as a third potential last sighting added to the confusion over its movements.</p>
+
+<p>India became the 12th country to say it would join the search, indicating how far north the operation had been extended.</p>
+
+<p>The plane was heading north-east to Beijing when it took off from Malaysia in the early hours of Saturday morning. Officials have said it may have turned around and headed back to Kuala Lumpur when it was lost.</p>
+
+<p>On Wednesday, in a new twist to the mystery, officials suggested the plane may have been detected on military radar at 2.15am on Saturday, 200 miles north-west of Penang – a point which is not only west of the Malay peninsula, but so far north that it would be beyond the coast of Thailand. It was the third possible final time and location officials have given.</p>
+
+<!--more-->
+
+
+<p>&ldquo;We are not saying this is MH370. It&rsquo;s an unidentified plot,&rdquo; said air force chief Rodzali Daud at a press conference in Kuala Lumpur.</p>
+
+<p><img src="http://www.romagazine.eu/wp-content/uploads/2013/01/horse-1.jpg" alt="This is a horse" /></p>
+
+<p>Malaysian authorities are facing growing criticism about muddled and sometimes contradictory briefings.</p>
+
+<p>China&rsquo;s foreign ministry spokesman Qin Gang told reporters: &ldquo;Right now there is a lot of information, and it&rsquo;s pretty chaotic, so up to this point we too have had difficulty confirming whether [detection over the strait of Malacca] is accurate or not.&rdquo;</p>
+
+<p>Vietnamese officials had said they were calling off their air search and scaling back their sea search pending further information from Malaysia, but have since announced they will resume a full-scale search.</p>
+
+<p>Malaysia&rsquo;s transport minister, Hishammuddin Hussein, told reporters: &ldquo;With each day that passes, I fear search and rescue becomes just search – but we will never give up hope.&rdquo;</p>
+
+<p>He insisted that authorities had been consistent and transparent, adding: &ldquo;It is only confusion if you want it to be seen to be confusion.&rdquo;</p>
+
+<p>He told reporters: &ldquo;We have nothing to hide.&rdquo;</p>
+
+<p>Five days after Beijing-bound MH370 disappeared not long after taking off from Kuala Lumpur at 12.41am on Saturday, questions regarding its final moments have if anything multiplied.</p>
+
+<p>The last certain contact with the plane was at around 1.30am, when it was flying over the South China Sea, between Malaysia and Vietnam. Subsequent readings come from military radars which can detect civilian planes but do not communicate with them, meaning that they cannot identify a particular flight. It is not clear if these radar readings were cross-checked with other information.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some Programming Stuff]]></title>
+    <link href="http://georgepowell.info/blog/2014/03/12/some-programming-stuff/"/>
+    <updated>2014-03-12T20:16:19+00:00</updated>
+    <id>http://georgepowell.info/blog/2014/03/12/some-programming-stuff</id>
+    <content type="html"><![CDATA[<h1>Blah blah this is a heading</h1>
+
+<h3>A C# Library for generating HTML from markdown</h3>
+
+<p>The international hunt for the missing Malaysia Airlines flight MH370 expanded to cover 27,000 square nautical miles on Wednesday as a third potential last sighting added to the confusion over its movements.</p>
+
+<p>India became the 12th country to say it would join the search, indicating how far north the operation had been extended.</p>
+
+<p>The plane was heading north-east to Beijing when it took off from Malaysia in the early hours of Saturday morning. Officials have said it may have turned around and headed back to Kuala Lumpur when it was lost.</p>
+
+<p>On Wednesday, in a new twist to the mystery, officials suggested the plane may have been detected on military radar at 2.15am on Saturday, 200 miles north-west of Penang – a point which is not only west of the Malay peninsula, but so far north that it would be beyond the coast of Thailand. It was the third possible final time and location officials have given.</p>
+
+<!--more-->
+
+
+<p>&ldquo;We are not saying this is MH370. It&rsquo;s an unidentified plot,&rdquo; said air force chief Rodzali Daud at a press conference in Kuala Lumpur.</p>
+
+<p>Malaysian authorities are facing growing criticism about muddled and sometimes contradictory briefings.</p>
+
+<p>China&rsquo;s foreign ministry spokesman Qin Gang told reporters: &ldquo;Right now there is a lot of information, and it&rsquo;s pretty chaotic, so up to this point we too have had difficulty confirming whether [detection over the strait of Malacca] is accurate or not.&rdquo;</p>
+
+<p>Vietnamese officials had said they were calling off their air search and scaling back their sea search pending further information from Malaysia, but have since announced they will resume a full-scale search.</p>
+
+<p>Malaysia&rsquo;s transport minister, Hishammuddin Hussein, told reporters: &ldquo;With each day that passes, I fear search and rescue becomes just search – but we will never give up hope.&rdquo;</p>
+
+<p>He insisted that authorities had been consistent and transparent, adding: &ldquo;It is only confusion if you want it to be seen to be confusion.&rdquo;</p>
+
+<p>He told reporters: &ldquo;We have nothing to hide.&rdquo;</p>
+
+<p>Five days after Beijing-bound MH370 disappeared not long after taking off from Kuala Lumpur at 12.41am on Saturday, questions regarding its final moments have if anything multiplied.</p>
+
+<p>The last certain contact with the plane was at around 1.30am, when it was flying over the South China Sea, between Malaysia and Vietnam. Subsequent readings come from military radars which can detect civilian planes but do not communicate with them, meaning that they cannot identify a particular flight. It is not clear if these radar readings were cross-checked with other information.</p>
+]]></content>
+  </entry>
+  
+</feed>

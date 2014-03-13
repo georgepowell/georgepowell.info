@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://georgepowell.info/blog/2014/03/12/some-programming-stuff/</loc>
+        <lastmod>2014-03-13T00:34:08+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/blog/2014/03/12/did-you-see-the-news/</loc>
+        <lastmod>2014-03-13T00:38:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/blog/2014/03/12/testing-out-code-rendering/</loc>
+        <lastmod>2014-03-13T09:14:40+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/about-me.html</loc>
+        <lastmod>2014-03-12T20:24:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/blog/archives/</loc>
+        <lastmod>2014-03-13T09:14:40+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/</loc>
+        <lastmod>2014-03-13T09:14:40+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://georgepowell.info/robots.txt</loc>
+        <lastmod>2014-03-12T19:19:30+00:00</lastmod>
+    </url>
+</urlset>
