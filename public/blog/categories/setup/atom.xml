@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: setup | georgepowell.info]]></title>
+  <link href="http://georgepowell.info/blog/categories/setup/atom.xml" rel="self"/>
+  <link href="http://georgepowell.info/"/>
+  <updated>2014-03-13T14:54:31+00:00</updated>
+  <id>http://georgepowell.info/</id>
+  <author>
+    <name><![CDATA[George Powell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World!]]></title>
+    <link href="http://georgepowell.info/blog/2014/03/13/hello-world/"/>
+    <updated>2014-03-13T09:37:35+00:00</updated>
+    <id>http://georgepowell.info/blog/2014/03/13/hello-world</id>
+    <content type="html"><![CDATA[<h3>&hellip; From the beautiful mix of technologies that make this site</h3>
+
+<p>I&rsquo;ve put off making a website for so long (I&rsquo;ve had this domain pointing to nothing for 2+ years) because I believed that if I was going to do it, I&rsquo;d do it <em>properly</em> and build the whole thing myself. But I hate CSS and I&rsquo;ve always found more fun things to do. I&rsquo;ve finally found a few technologies cool enough for me to get excited about using, and it took me literally an hour to get this fancy looking site running.</p>
+
+<h2>Octopress</h2>
+
+<p><a href="https://github.com/imathis/octopress">Octopress</a> is a fantastic (free, open source) blogging platform built on <a href="https://github.com/jekyll/jekyll">Jekyll</a>: a fantastic (free, open source) static site generator that uses <a href="https://www.ruby-lang.org/en/">Ruby</a>: a simple, compact, open-source language similar to python. Pages and posts are written in <a href="http://daringfireball.net/projects/markdown/">markdown</a> (an extremely simple syntax for writing basic documents) and auto-compiled into a static site. There&rsquo;s loads of free octopress themes available at <a href="http://opthemes.com/">opthemes.com</a>. The theme on this page is <a href="https://github.com/alexgaribay/octoflat">Octoflat</a>, a minimal flat theme built using <a href="http://getbootstrap.com/">Twitter Bootstrap</a> &ndash; which, finally, is a large front-end web development library which makes it much easier to build functional good looking sites. Beautiful! It&rsquo;d have taken me years to build this <em>the proper way</em>.</p>
+
+<h2>Heroku</h2>
+
+<p><a href="https://www.heroku.com/">Heroku</a> is a friendly, free hosting website that supports ruby apps and deploying with a &lsquo;git push heroku master&rsquo;. Couldn&rsquo;t be simpler.</p>
+
+<p>This website&rsquo;s sourcecode is available (complete with all posts in markdown) on <a href="https://github.com/georgepowell">my GitHub page</a>, but if you want to make a copycat of some sort you&rsquo;d be best working from the octopress default template directly.</p>
+]]></content>
+  </entry>
+  
+</feed>

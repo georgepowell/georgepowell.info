@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Chrome extension #1: Subnito"
+date: 2014-03-13 13:48:59 +0000
+comments: true
+categories: chrome programming javascript
+---
+
+I decided to create a chrome extension last week, it was surprisingly simple. Chrome extensions basically give you a very simple way to inject your own javascript into whatever webpages you like, plus have access to chrome's own APIs for playing with tabs or storing data etc. The whole extension uses nothing but javascript (you can add jquery etc. if you like), and HTML. Even the .manifest file is JSON.
+
+Subnito was my first serious chrome extension. It uses the reddit API to detect if you're browsing an 18+ subreddit on reddit.com and pushes you into incognito mode if so.
+
+The bulk of the work is done in one short file.
+
+**background.js**
+{% codeblock lang:js %}
+
+// Trigger this code onBeforeNavigate to any url. This happens even before the web request has been made to increase speed.
+chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
+  var url = details.url;
+  var bare_url = url.replace("https://", "").replace("http://", ""); // remove protocol
+  var match_string = "www.reddit.com/r/";
+  if (bare_url.substring(0, match_string.length) === match_string) { // check if we're on a reddit subreddit
+  	var subreddit = bare_url.split('/')[2]; // extract the subreddit name
+  	// request a json document giving the details of the sub using the reddit API
+  	$.getJSON("http://www.reddit.com/r/" + subreddit + "/about.json", function(data) { 
+  		if (data['data']['over18']) { // check the boolean over18 flag in the returned json
+  		    chrome.tabs.remove(details.tabId, function() { }); // remove non-incognito tab
+  		    chrome.history.deleteUrl({ "url": url}, function() { }); // delete url from history completely
+  		    chrome.windows.create({"url": url, "incognito": true}); // open incognito window
+  		}
+  	});
+  }
+})
+
+{% endcodeblock %}
+
+[Full source code on GitHub](https://github.com/georgepowell/subnito)
+
+[Install on Chrome Store](https://chrome.google.com/webstore/detail/subnito/cdbdngojiagnofammchefeeaacdifikn)

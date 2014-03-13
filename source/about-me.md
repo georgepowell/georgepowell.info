@@ -8,8 +8,8 @@ footer: true
 ---
 
 
-Who are you?
-============
+Who am I?
+=========
 
 I'm a software developer currently studying computer science at the University of Sheffield. I enjoy making things, designing things, writing, and solving problems. I also love the outdoors and try to keep a large collection of hobbies like slacklining, rock climbing, cycling and [juggling](http://www.youtube.com/watch?v=3zJC3dYOOv4).
 
