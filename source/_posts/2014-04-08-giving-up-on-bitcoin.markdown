@@ -34,9 +34,9 @@ Let's summarise:
 
 #### Bitcoin is
 
-- the only pseudo-anonymous digital currecy.
-- the only decentralised digital currency.
-- the only completely fee-free digital currency (minus fees to miners)
+- a pseudo-anonymous digital currecy.
+- a decentralised digital currency.
+- a completely fee-free digital currency (minus fees to miners)
 
 
 
