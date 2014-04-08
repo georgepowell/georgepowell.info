@@ -4,7 +4,7 @@
 
 url: http://georgepowell.info
 title: "georgepowell.info"
-subtitle: "George's dumping ground/blog/website whatever"
+subtitle: "George's dumping ground/blog/website etc."
 author: George Powell
 simple_search: https://www.google.com/search
 description: Hello World this is a description
@@ -40,7 +40,7 @@ source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -50,9 +50,9 @@ rdiscount:
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir: writing  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "... More &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 

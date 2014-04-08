@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Bitcoin as a product"
+date: 2014-04-08 14:33:37 +0100
+comments: true
+categories: bitcoin economics
+---
+
+I've been close to investing in Bitcoin over the past couple of months; its promise as a technology comparable to the internet of 20 years ago is severely tempting. If it ever gains wide acceptence, even a small investment could be worth big money in the coming decades. But I've given up - for the moment at least - on that hope. Here's why:
+
+### Money for the people
+
+Bitcoin is oft peddled with an economic libertarian ideology. Our fiat currencies are controlled and regulated by the banks and governments, adding fees and friction to transactions. By relying on the system as it is, we hand our power to an unrepresentative minority who can profit from and manipulate our fiat currencies, not necessarily with the majority's best interests in mind. Bitcoin is a decentralised currency that can't be controlled by an individual party, it lets regular folk and small businesses make transactions to each other without needing to trust a third party. This is true, but it's not the whole story.
+
+### The current system
+
+To gain a real understanding of where bitcoin sits as a technology, we need to understand how the current system works, and what problems (if any) bitcoin solves.
+
+First, lets look at hard cash - the stuff we carry around in our wallets. Already, cash has some of the essential properties that bitcoin claims: It's untracable, unregulatable, and anonymous; perhaps to a greater extent even than bitcoin. Cash is used for drugs, weapons, money laundering, untaxed income, you name it. Nobody can charge a small business for the right to accept cash. Cash falls down at two hurdles, however: it's not digital, and control of its production is centralised. We'll look at what this really means in a second.
+
+Now lets look at banks and the digitised money they offer through debit and credit cards. By digitising our cash and giving it to the banks, some important things have now changed: it is no longer untracable, anonymous, and unregulatable. By trusting the banks with our money we have sacrificed this for some serious benefits: They keep our money more secure than we could realistically keep cash, they offer fast digital transactions around the world and online, often with no fees or friction, and they offer interest on our savings at no extra cost. The currency is still the same as our cash, so production doesn't change hands. The important thing to realise here is that banks are offering a real service to us in securing and digitising our cash, and in some sense bitcoin must solve a problem not already solved by the combination of modern banking and cash.
+
+### Bitcoin as a product
+
+Finally, lets look at how bitcoin fairs.
+
+ - It's digital. Like the online banking and cards offered by the banks, bitcoin allows transactions to anywhere in the world with the click of a button. 
+ - It's pseudoanonymous. In practise, this means that your bitcoin transactions are all tied to a pseudo-identity, which can be in theory unconnected to your real world identity. Although in practise this is hard to achieve without some knowhow in computers. [Jerry Brito claims in an interview with Vice that you'd need to buy bitcoin on the street with cash to guarentee full anonymity.](https://www.youtube.com/watch?v=SNssKmeXrGs)
+ - It's decentralised. This removes the need to trust a third party to manage transactions and inflation.
+
+### What bitcoin brings to the table
+
+Let's summarise:
+
+#### Bitcoin is
+
+- the only pseudo-anonymous digital currecy.
+- the only decentralised digital currency.
+- the only completely fee-free digital currency (minus fees to miners)
+
+
+
+##### Bitcoin is not
+
+ - the only digital currency.
+ - the only anonymous currency.
+ - the only fee-free digital currency, for many transfers/transactions.
+
+Naturally, this leads to the question: Why would the average consumer want to switch to bitcoin? Who does bitcoin offer a real service to?
+
+Anonymity is useful for people who don't want to be caught. Bitcoin offers a genuinely useful product for drug dealers, money launderers, and privacy enthusiasts. It is in these circles alone that bitcoin is being used as it was intended.
+
+Decentralisation is desirable for those **who don't trust the banks, and don't want the extra services they offer**. Bitcoin can only thrive here when banks/governments fail in the eyes of enough people. Until then, however, in the battle for your digital transactions, banks offer faster transactions, more security, interest on your money, and many other services that bitcoin does not.
+
+Keeping your money in bitcoin means transactions take minutes rather than seconds to authorise, you have complete responsibility over your private-key - meaning there's no security to fraud and hacking. The government and banks don't respect it, and for the moment at least, most businesses don't accept it.
+
+It's easy to get swept up in the bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It's important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?
+
+Bitcoin may be an important product to countries who's currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything more than a minority acceptance.
