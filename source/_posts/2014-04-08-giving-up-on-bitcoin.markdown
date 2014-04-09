@@ -32,7 +32,7 @@ Finally, lets look at how bitcoin fairs.
 
 Let's summarise:
 
-#### Bitcoin is
+##### Bitcoin is
 
 - a pseudo-anonymous digital currecy.
 - a decentralised digital currency.
@@ -48,12 +48,12 @@ Let's summarise:
 
 Naturally, this leads to the question: Why would the average consumer want to switch to bitcoin? Who does bitcoin offer a real service to?
 
-Anonymity is useful for people who don't want to be caught. Bitcoin offers a genuinely useful product for drug dealers, money launderers, and privacy enthusiasts. It is in these circles alone that bitcoin is being used as it was intended.
+Anonymity is useful for people who don't want to be caught. Bitcoin offers a genuinely useful product for drug dealers, money launderers, and privacy enthusiasts. In these circles bitcoin is already widely used as a currency.
 
-Decentralisation is desirable for those **who don't trust the banks, and don't want the extra services they offer**. Bitcoin can only thrive here when banks/governments fail in the eyes of enough people. Until then, however, in the battle for your digital transactions, banks offer faster transactions, more security, interest on your money, and many other services that bitcoin does not.
+Decentralisation is desirable for those **who don't trust the banks, and don't want the extra services they offer**. A good example of this is when [paypal froze payments/donations to WikiLeaks](http://www.wired.com/2010/12/paypal-wikileaks/), bitcoin cannot in principle be controlled like this and so it became useful as a means to make donations. Bitcoin thrives here when banks/governments fail in the eyes of enough people. Until then, however, in the battle for your digital transactions, banks offer faster transactions, more security, interest on your money, and many other services that bitcoin does not.
 
 Keeping your money in bitcoin means transactions take minutes rather than seconds to authorise, you have complete responsibility over your private-key - meaning there's no security to fraud and hacking. The government and banks don't respect it, and for the moment at least, most businesses don't accept it.
 
-It's easy to get swept up in the bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It's important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?
+It's easy to get swept up in the pro-bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It's important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?
 
-Bitcoin may be an important product to countries who's currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything more than a minority acceptance.
+Bitcoin may be an important product to countries who's currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything other than a minority acceptance.

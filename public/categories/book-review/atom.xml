@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: book-review | georgepowell.info]]></title>
+  <link href="http://georgepowell.info/categories/book-review/atom.xml" rel="self"/>
+  <link href="http://georgepowell.info/"/>
+  <updated>2014-04-09T11:36:36+01:00</updated>
+  <id>http://georgepowell.info/</id>
+  <author>
+    <name><![CDATA[George Powell]]></name>
+    <email><![CDATA[georgepowell_1@hotmail.co.uk]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Big Pharma - Book review]]></title>
+    <link href="http://georgepowell.info/writing/big-pharma-book-review/"/>
+    <updated>2014-04-09T10:28:57+01:00</updated>
+    <id>http://georgepowell.info/writing/big-pharma-book-review</id>
+    <content type="html"><![CDATA[<p>We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes:</p>
+
+<blockquote><p>&hellip; We have occasional, small brief trials, in unrepresentative populations, testing irrelevant comparisons, measuring irrelevant outcomes, with whole trials that go missing, avoidable design flaws, and endless reporting biases that only persist because research is conducted chaotically, for commercial gain, in spuriously expensive trials. The poor-quality evidence created by this system harms patients around the world.  <strong>And if we wanted, we could fix it.</strong></p></blockquote>
+
+<p>This is a powerful book, with a clear and unforgiving message: Western medicine is not as scientific as we are told; the system is corrupt and industries work with their own profits in mind.</p>
+
+<h3>Bad Science</h3>
+
+<p>Goldacre is known for his blog &ndash; Bad Science, where he debunks claims ranging from the proficiency of homeopathy to the popular nutrician supplements of &ldquo;Dr&rdquo; Gillian Mckieth. He turns his attention here to the more serious mispractices going on in western medicine as a whole.</p>
+
+<p>It is a long book, covering over 350 pages excluding notes, illustrating his points with shocking stories and backing them up with hard evidence where possible. He covers many topics, ranging from the widely unsolved positive publication bias in academic journals, to &lsquo;regulatory capture&rsquo;: how pharmacutical companies become their own regulators. The book ends with an unforgiving tour-de-force breakdown of how marketting is used to decieve doctors and patients.</p>
+
+<p>Goldacre knows this isn&rsquo;t an academic paper, and he communicates to his readers early on that it shouldn&rsquo;t be treated as one. However the result is a book that treads a confusing line between sensationalist popular science and a seminal analysis of a very serious problem. The points in this book, however, need to be treated with respect by the people in power, even though it is aimed at the general public.</p>
+
+<p>I really enjoyed and learnt a lot from this book, and I&rsquo;d recommend it especially to those involved in medicine &ndash; who will be in a better position than me to comment on the problems raised here, and maybe do something about them.</p>
+
+<p><a href="http://www.amazon.co.uk/Bad-Pharma-How-Medicine-Broken/dp/000749808X">Buy Ben Goldacre&rsquo;s Bad Pharma on Amazon.co.uk</a></p>
+]]></content>
+  </entry>
+  
+</feed>
