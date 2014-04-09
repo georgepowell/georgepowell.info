@@ -6,7 +6,7 @@ comments: true
 categories: book-review
 ---
 
-We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes:
+We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes: *(p238)*
 
  > ... We have occasional, small brief trials, in unrepresentative populations, testing irrelevant comparisons, measuring irrelevant outcomes, with whole trials that go missing, avoidable design flaws, and endless reporting biases that only persist because research is conducted chaotically, for commercial gain, in spuriously expensive trials. The poor-quality evidence created by this system harms patients around the world.	**And if we wanted, we could fix it.**
 
@@ -14,7 +14,7 @@ This is a powerful book, with a clear and unforgiving message: Western medicine 
 
 ### Bad Science
 
-Goldacre is known for his blog - Bad Science, where he debunks claims ranging from the proficiency of homeopathy to the popular nutrician supplements of "Dr" Gillian Mckieth. He turns his attention here to the more serious mispractices going on in western medicine as a whole.
+Goldacre is known for his blog - [Bad Science](http://www.badscience.net/), where he debunks claims ranging from the [proficiency of homeopathy](http://www.theguardian.com/science/2007/nov/16/sciencenews.g2) to the popular [nutrician supplements of "Dr" Gillian Mckieth](http://www.badscience.net/2007/02/ms-gillian-mckeith-banned-from-calling-herself-a-doctor/). He turns his attention here to the more serious mispractices going on in western medicine as a whole.
 
 It is a long book, covering over 350 pages excluding notes, illustrating his points with shocking stories and backing them up with hard evidence where possible. He covers many topics, ranging from the widely unsolved positive publication bias in academic journals, to 'regulatory capture': how pharmacutical companies become their own regulators. The book ends with an unforgiving tour-de-force breakdown of how marketting is used to decieve doctors and patients.
 
