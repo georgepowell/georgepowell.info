@@ -6,6 +6,9 @@ comments: true
 categories: book-review
 ---
 
+![Bad Pharma book cover](http://sciencebasedpharmacy.files.wordpress.com/2012/11/bad-pharma.png)
+
+
 We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes: *(p238)*
 
  > ... We have occasional, small brief trials, in unrepresentative populations, testing irrelevant comparisons, measuring irrelevant outcomes, with whole trials that go missing, avoidable design flaws, and endless reporting biases that only persist because research is conducted chaotically, for commercial gain, in spuriously expensive trials. The poor-quality evidence created by this system harms patients around the world.	**And if we wanted, we could fix it.**
@@ -20,6 +23,6 @@ It is a long book, covering over 350 pages excluding notes, illustrating his poi
 
 Goldacre knows this isn't an academic paper, and he communicates to his readers early on that it shouldn't be treated as one. However the result is a book that treads a confusing line between sensationalist popular science and a seminal analysis of a very serious problem. The points in this book, however, need to be treated with respect by the people in power, even though it is aimed at the general public.
 
-I really enjoyed and learnt a lot from this book, and I'd recommend it especially to those involved in medicine - who will be in a better position than me to comment on the problems raised here, and maybe do something about them.
+I really enjoyed and learnt a lot from this book, and I'd recommend it especially to those involved in medicine - who will be in a better position than I am to comment on the problems raised here, and maybe do something about them.
 
 [Buy Ben Goldacre's Bad Pharma on Amazon.co.uk](http://www.amazon.co.uk/Bad-Pharma-How-Medicine-Broken/dp/000749808X)

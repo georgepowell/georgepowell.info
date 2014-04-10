@@ -6,6 +6,8 @@ comments: true
 categories: bitcoin economics
 ---
 
+*Please note I'm not an expert on Bitcoin. I write about this stuff for fun.*
+
 I've been close to investing in Bitcoin over the past couple of months; its promise as a technology comparable to the internet of 20 years ago is severely tempting. If it ever gains wide acceptence, even a small investment could be worth big money in the coming decades. But I've given up - for the moment at least - on that hope. Here's why:
 
 ### Money for the people
@@ -19,7 +21,7 @@ To gain a real understanding of where bitcoin sits as a technology, we need to u
 First, lets look at hard cash - the stuff we carry around in our wallets. Already, cash has some of the essential properties that bitcoin claims: It's untracable, unregulatable, and anonymous; perhaps to a greater extent even than bitcoin. Cash is used for drugs, weapons, money laundering, untaxed income, you name it. Nobody can charge a small business for the right to accept cash. Cash falls down at two hurdles, however: it's not digital, and control of its production is centralised. We'll look at what this really means in a second.
 
 Now lets look at banks and the digitised money they offer through debit and credit cards. By digitising our cash and giving it to the banks, some important things have now changed: it is no longer untracable, anonymous, and unregulatable. By trusting the banks with our money we have sacrificed this for some serious benefits: They keep our money more secure than we could realistically keep cash, they offer fast digital transactions around the world and online, often with no fees or friction, and they offer interest on our savings at no extra cost. The currency is still the same as our cash, so production doesn't change hands. The important thing to realise here is that banks are offering a real service to us in securing and digitising our cash, and in some sense bitcoin must solve a problem not already solved by the combination of modern banking and cash.
-
+<!-- more -->
 ### Bitcoin as a product
 
 Finally, lets look at how bitcoin fairs.
@@ -39,7 +41,6 @@ Let's summarise:
 - a completely fee-free digital currency (minus fees to miners)
 
 
-
 ##### Bitcoin is not
 
  - the only digital currency.
@@ -57,3 +58,23 @@ Keeping your money in bitcoin means transactions take minutes rather than second
 It's easy to get swept up in the pro-bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It's important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?
 
 Bitcoin may be an important product to countries who's currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything other than a minority acceptance.
+
+
+----------------------------------------
+
+'Bitcoin banks' and regulation
+==============================
+
+Writing the above, I'd made the assumption that people store all their bitcoins in their personal bitcoin wallets, and there was no such thing as a *Bitcoin bank*. The analogy goes like this: If your personal bitcoin wallet is like cash, then there can exist a 'bitcoin bank' that provides the desirable services (like security) given by conventional banks but with bitcoin. In theory, this is possible. And it is here where government regulation becomes very relevant.
+
+Google 'Bitcoin Bank' and the first result is [flexcoin.com](http://flexcoin.com). The information on their website is informative...
+
+ > **Flexcoin is shutting down.** On March 2nd 2014 Flexcoin was attacked and robbed of all coins in the hot wallet. The attacker made off with 896 BTC... As Flexcoin does not have the resources, assets, or otherwise to come back from this loss, we are closing our doors immediately.
+
+The 'bank', existing to provide security and financial services to bitcoin users, ended up doing exactly the opposite and there's nothing that can be done about it; Bitcoin is not regarded as a currency by government and regulatory organisations, and so bitcoin exchanges and banks go unregulated too. Flexcoin is not alone; [nearly 50% of all bitcoin exchanges have failed](http://lyle.smu.edu/~tylerm/fc13.pdf). Look at the [legal notice on their information page](http://www.flexcoin.com/41.html):
+
+ > **Legal Notice:** We are not a true bank that accepts USD or any national currency, only bitcoins which by their nature are not regulated, we’re not FDIC insured or regulated by any government entity.
+
+With proper regulation on bitcoin banks and exchanges, flexcoin.com might not have been allowed to exist as it did, and maybe some people would have saved their money. It's important to remember here that regulation is *for the banks, not the currency*, and at least in the ideal case, its purpose is to avoid catastrophes like flexcoin and MtGox.
+
+Bitcoin banks may in theory be able to provide the same services as conventional banks, but current attempts have widely failed, especially when it comes to security. This is a product of the decentralised and unregulated nature of bitcoin, so time will tell if innovative companies can provide sufficient services to make bitcoin as usable. But the hurdles of regulation and security have yet to be passed.
