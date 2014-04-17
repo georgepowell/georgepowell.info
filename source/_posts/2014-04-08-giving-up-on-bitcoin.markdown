@@ -3,7 +3,7 @@ layout: post
 title: "Bitcoin as a product"
 date: 2014-04-08 14:33:37 +0100
 comments: true
-categories: bitcoin economics
+categories: blog bitcoin economics
 ---
 
 *Please note I'm not an expert on Bitcoin. I write about this stuff for fun.*

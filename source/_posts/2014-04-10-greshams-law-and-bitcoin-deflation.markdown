@@ -3,7 +3,7 @@ layout: post
 title: "Gresham's Law and Bitcoin deflation"
 date: 2014-04-10 12:26:40 +0100
 comments: true
-categories: bitcoin economics
+categories: blog bitcoin economics
 ---
 
 You're at the local store buying some bread and milk. The cashier asks you for £3.35. You open your wallet and you've got two £5 notes:

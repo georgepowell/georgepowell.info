@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-04-10T13:41:50+01:00</updated>
+  <updated>2014-04-17T01:37:31+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -14,23 +14,246 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World!]]></title>
-    <link href="http://georgepowell.info/writing/hello-world/"/>
-    <updated>2014-03-13T09:37:35+00:00</updated>
-    <id>http://georgepowell.info/writing/hello-world</id>
-    <content type="html"><![CDATA[<h3>&hellip; From the beautiful mix of technologies that make this site</h3>
+    <title type="html"><![CDATA[Maths ain't magic]]></title>
+    <link href="http://georgepowell.info/writing/maths-aint-magic/"/>
+    <updated>2014-04-16T23:23:56+01:00</updated>
+    <id>http://georgepowell.info/writing/maths-aint-magic</id>
+    <content type="html"><![CDATA[<h1>Imaginary numbers and the nature of mathematics</h1>
 
-<p>I&rsquo;ve put off making a website for so long (I&rsquo;ve had this domain pointing to nothing for 2+ years) because I believed that if I was going to do it, I&rsquo;d do it <em>properly</em> and build the whole thing myself. But I hate CSS and I&rsquo;ve always found more fun things to do. I&rsquo;ve finally found a few technologies cool enough for me to get excited about using, and it took me literally an hour to get this fancy looking site running.</p>
+<p>I first heard of imaginary numbers when someone showed me the <a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a>:</p>
 
-<h2>Octopress</h2>
+<p><img src="https://lh4.googleusercontent.com/-nnOUsGwmsEw/AAAAAAAAAAI/AAAAAAAAAAA/xgyUbcFMo6g/photo.jp" alt="Mandelbrot visualisation" /></p>
 
-<p><a href="https://github.com/imathis/octopress">Octopress</a> is a fantastic (free, open source) blogging platform built on <a href="https://github.com/jekyll/jekyll">Jekyll</a>: a fantastic (free, open source) static site generator that uses <a href="https://www.ruby-lang.org/en/">Ruby</a>: a simple, compact, open-source language similar to python. Pages and posts are written in <a href="http://daringfireball.net/projects/markdown/">markdown</a> (an extremely simple syntax for writing basic documents) and auto-compiled into a static site. There&rsquo;s loads of free octopress themes available at <a href="http://opthemes.com/">opthemes.com</a>. The theme on this page is <a href="https://github.com/alexgaribay/octoflat">Octoflat</a>, a minimal flat theme built using <a href="http://getbootstrap.com/">Twitter Bootstrap</a> &ndash; which, finally, is a large front-end web development library which makes it much easier to build functional good looking sites. Beautiful! It&rsquo;d have taken me years to build this <em>the proper way</em>.</p>
+<p>They described it to me:</p>
 
-<h2>Heroku</h2>
+<blockquote><p>The x axis is for the real numbers, and the y axis is for the imaginary numbers. The colour of each pixel is determined by the properties of the imaginary and real numbers it represents.</p></blockquote>
 
-<p><a href="https://www.heroku.com/">Heroku</a> is a friendly, free hosting website that supports ruby apps and deploying with a &lsquo;git push heroku master&rsquo;. Couldn&rsquo;t be simpler.</p>
+<p>My reaction was confusion, as it should have been. That picture sure doesn&rsquo;t look imaginary. And how can these numbers exist on a computer if they&rsquo;re imaginary? Maybe I&rsquo;m not smart enough to understand, maybe it&rsquo;s a concept only accessible to the minds of mathematitions. What are imaginary numbers?</p>
 
-<p>This website&rsquo;s sourcecode is available (complete with all posts in markdown) on <a href="https://github.com/georgepowell">my GitHub page</a>, but if you want to make a copycat of some sort you&rsquo;d be best working from the octopress default template directly.</p>
+<blockquote><p>Well&hellip; They&rsquo;re <em>made up</em> numbers that don&rsquo;t really exist like normal numbers do. There&rsquo;s <strong>no</strong> number that can be squared into a negative number, so we make up the imaginary numbers!</p></blockquote>
+
+<p>I learnt to program in my teens and when I <a href="http://www.newgrounds.com/portal/view/501340">wrote my own mandelbrot set visualiser</a> I realised it doesn&rsquo;t really need <em>imaginary-made-up</em> numbers after all. All it needs is two standard real numbers and a formula.</p>
+
+<p>What&rsquo;s &lsquo;imaginary&rsquo; about imaginary numbers then? Well &lsquo;real&rsquo; negative numbers don&rsquo;t have &lsquo;real&rsquo; square roots, so we call their roots &lsquo;imaginary&rsquo;. It&rsquo;s a <em>name</em>. Are they more imaginary that the &lsquo;real&rsquo; numbers? No. You don&rsquo;t need a special type of calculator or a special kind of pen to calculate with imaginary numbers. It&rsquo;s really not the best naming decision: calling a fundamental and useful concept &lsquo;imaginary&rsquo; scares and confuses people away from trying to understand it. The crux to understanding imaginary numbers is to realise how normal and unimaginary they really are. But <em>shh!</em> Don&rsquo;t tell anyone &ndash; if everyone knew this we&rsquo;d no longer enjoy the reactions of respect and awe that using the term invokes.</p>
+
+<p>Mathematics studies <em>formal abstractions</em> &ndash; mental constructions that have been defined so carefully and unambiguously that their properties become objective. 1, 2, 3 and the rest of the counting numbers, they&rsquo;re all abstractions: concepts we create to categorise, percieve and understand the world. We use abstractions to represent things, and whether abstractions are &lsquo;real&rsquo; or not doesn&rsquo;t even matter; <em>they&rsquo;re all as real or unreal as each other</em>. Imaginary numbers exist alongside all the real numbers as mathematical abstractions, and useful tools to represent the world we live in.</p>
+
+<p>It&rsquo;s the way the mind works. As individuals and cultures, we develop concepts and abstractions to represent the world and its behaviour &ndash; mathematics studies the subset of these concepts that have been formally defined. To know <em>what infinity is</em>, or <em>what an imaginary number is</em>, is really just knowing how the mind uses abstractions to represent our surroundings.</p>
+
+<p>The view that mathematics is just concepts and abstractions in our psychology is far from the only accepted philosophy. There&rsquo;s <a href="http://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought">plenty of schools of thought</a> around what maths is. For me, however, any existential or borderline-spiritual view of mathematical knowledge has caused more confusion and  gotten in the way of learning the actual maths.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gresham's Law and Bitcoin deflation]]></title>
+    <link href="http://georgepowell.info/writing/greshams-law-and-bitcoin-deflation/"/>
+    <updated>2014-04-10T12:26:40+01:00</updated>
+    <id>http://georgepowell.info/writing/greshams-law-and-bitcoin-deflation</id>
+    <content type="html"><![CDATA[<p>You&rsquo;re at the local store buying some bread and milk. The cashier asks you for £3.35. You open your wallet and you&rsquo;ve got two £5 notes:</p>
+
+<h3>Crusty old £5:</h3>
+
+<p><img src="http://i.dailymail.co.uk/i/pix/2011/03/21/article-0-00F3EED2000004B0-407_468x263.jpg" alt="Old note" /></p>
+
+<h3>Crisp new £5:</h3>
+
+<p><img src="http://i.dailymail.co.uk/i/pix/2009/08/24/article-0-00F3EED2000004B0-777_468x249.jpg" alt="New note" /></p>
+
+<p>Which one do you give to the cashier?</p>
+
+<p>Unless you&rsquo;re feeling kind &ndash; that is, you&rsquo;re not an <a href="http://en.wikipedia.org/wiki/Homo_economicus">economic man</a> &ndash; you&rsquo;d want to get rid of your crusty old £5 note; they&rsquo;re worth the same amount to the cashier, so you&rsquo;d be a fool to give up the shiny new one for nothing extra. This is the basis of a paradoxical truth in economics: the measure of a currency&rsquo;s success is if it is used in transactions, yet the <em>shiny, new, better</em> £5 notes will get hoarded while the old ones get traded. <strong>People want to get rid of <em>bad</em> currency, which means it&rsquo;s used more in transactions</strong>. Enter <a href="http://en.wikipedia.org/wiki/Gresham's_law">Gresham&rsquo;s Law</a>:</p>
+
+<blockquote><p>Gresham&rsquo;s law is an economic principle that states: &ldquo;When a government overvalues one type of money and undervalues another, the undervalued money will leave the country or disappear from circulation into hoards, while the overvalued money will flood into circulation.&rdquo; It is commonly stated as: &ldquo;Bad money drives out good&rdquo;.</p></blockquote>
+
+<p> We can rewrite the above scenario with bitcoin replacing the new shiny £5 note, and our standard fiat currencies as the old one. Presuming bitcoin is accepted universally and is as easy to pay with as paying by card, which one should you choose?</p>
+
+<p> Bitcoin is digital gold: there is a finite supply. Cash is subject to continuous steady inflation: its value will always be gradually decreasing. So assuming the novelty of spending bitcoin has worn off in this future, it would make sense to keep your value-preserving-bitcoin and get rid of your cash. This is one reason why economists critisise the deflationary (or at least zero-inflation) nature of bitcoin.</p>
+
+<p> The reality is complex, however, and this property doesn&rsquo;t necessarily detract from its other advantages. But this is one reason for believing that even if bitcoin is successful, it won&rsquo;t <em>replace</em> other currencies too easily.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Big Pharma - Book review]]></title>
+    <link href="http://georgepowell.info/writing/big-pharma-book-review/"/>
+    <updated>2014-04-09T10:28:57+01:00</updated>
+    <id>http://georgepowell.info/writing/big-pharma-book-review</id>
+    <content type="html"><![CDATA[<p><img src="http://sciencebasedpharmacy.files.wordpress.com/2012/11/bad-pharma.png" alt="Bad Pharma book cover" /></p>
+
+<p>We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes: <em>(p238)</em></p>
+
+<blockquote><p>&hellip; We have occasional, small brief trials, in unrepresentative populations, testing irrelevant comparisons, measuring irrelevant outcomes, with whole trials that go missing, avoidable design flaws, and endless reporting biases that only persist because research is conducted chaotically, for commercial gain, in spuriously expensive trials. The poor-quality evidence created by this system harms patients around the world.  <strong>And if we wanted, we could fix it.</strong></p></blockquote>
+
+<p>This is a powerful book, with a clear and unforgiving message: Western medicine is not as scientific as we are told; the system is corrupt and industries work with their own profits in mind.</p>
+
+<h3>Bad Science</h3>
+
+<p>Goldacre is known for his blog &ndash; <a href="http://www.badscience.net/">Bad Science</a>, where he debunks claims ranging from the <a href="http://www.theguardian.com/science/2007/nov/16/sciencenews.g2">proficiency of homeopathy</a> to the popular <a href="http://www.badscience.net/2007/02/ms-gillian-mckeith-banned-from-calling-herself-a-doctor/">nutrician supplements of &ldquo;Dr&rdquo; Gillian Mckieth</a>. He turns his attention here to the more serious mispractices going on in western medicine as a whole.</p>
+
+<p>It is a long book, covering over 350 pages excluding notes, illustrating his points with shocking stories and backing them up with hard evidence where possible. He covers many topics, ranging from the widely unsolved positive publication bias in academic journals, to &lsquo;regulatory capture&rsquo;: how pharmacutical companies become their own regulators. The book ends with an unforgiving tour-de-force breakdown of how marketting is used to decieve doctors and patients.</p>
+
+<p>Goldacre knows this isn&rsquo;t an academic paper, and he communicates to his readers early on that it shouldn&rsquo;t be treated as one. However the result is a book that treads a confusing line between sensationalist popular science and a seminal analysis of a very serious problem. The points in this book, however, need to be treated with respect by the people in power, even though it is aimed at the general public.</p>
+
+<p>I really enjoyed and learnt a lot from this book, and I&rsquo;d recommend it especially to those involved in medicine &ndash; who will be in a better position than I am to comment on the problems raised here, and maybe do something about them.</p>
+
+<p><a href="http://www.amazon.co.uk/Bad-Pharma-How-Medicine-Broken/dp/000749808X">Buy Ben Goldacre&rsquo;s Bad Pharma on Amazon.co.uk</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bitcoin as a product]]></title>
+    <link href="http://georgepowell.info/writing/giving-up-on-bitcoin/"/>
+    <updated>2014-04-08T14:33:37+01:00</updated>
+    <id>http://georgepowell.info/writing/giving-up-on-bitcoin</id>
+    <content type="html"><![CDATA[<p><em>Please note I&rsquo;m not an expert on Bitcoin. I write about this stuff for fun.</em></p>
+
+<p>I&rsquo;ve been close to investing in Bitcoin over the past couple of months; its promise as a technology comparable to the internet of 20 years ago is severely tempting. If it ever gains wide acceptence, even a small investment could be worth big money in the coming decades. But I&rsquo;ve given up &ndash; for the moment at least &ndash; on that hope. Here&rsquo;s why:</p>
+
+<h3>Money for the people</h3>
+
+<p>Bitcoin is oft peddled with an economic libertarian ideology. Our fiat currencies are controlled and regulated by the banks and governments, adding fees and friction to transactions. By relying on the system as it is, we hand our power to an unrepresentative minority who can profit from and manipulate our fiat currencies, not necessarily with the majority&rsquo;s best interests in mind. Bitcoin is a decentralised currency that can&rsquo;t be controlled by an individual party, it lets regular folk and small businesses make transactions to each other without needing to trust a third party. This is true, but it&rsquo;s not the whole story.</p>
+
+<h3>The current system</h3>
+
+<p>To gain a real understanding of where bitcoin sits as a technology, we need to understand how the current system works, and what problems (if any) bitcoin solves.</p>
+
+<p>First, lets look at hard cash &ndash; the stuff we carry around in our wallets. Already, cash has some of the essential properties that bitcoin claims: It&rsquo;s untracable, unregulatable, and anonymous; perhaps to a greater extent even than bitcoin. Cash is used for drugs, weapons, money laundering, untaxed income, you name it. Nobody can charge a small business for the right to accept cash. Cash falls down at two hurdles, however: it&rsquo;s not digital, and control of its production is centralised. We&rsquo;ll look at what this really means in a second.</p>
+
+<p>Now lets look at banks and the digitised money they offer through debit and credit cards. By digitising our cash and giving it to the banks, some important things have now changed: it is no longer untracable, anonymous, and unregulatable. By trusting the banks with our money we have sacrificed this for some serious benefits: They keep our money more secure than we could realistically keep cash, they offer fast digital transactions around the world and online, often with no fees or friction, and they offer interest on our savings at no extra cost. The currency is still the same as our cash, so production doesn&rsquo;t change hands. The important thing to realise here is that banks are offering a real service to us in securing and digitising our cash, and in some sense bitcoin must solve a problem not already solved by the combination of modern banking and cash.</p>
+
+<!-- more -->
+
+
+<h3>Bitcoin as a product</h3>
+
+<p>Finally, lets look at how bitcoin fairs.</p>
+
+<ul>
+<li>It&rsquo;s digital. Like the online banking and cards offered by the banks, bitcoin allows transactions to anywhere in the world with the click of a button.</li>
+<li>It&rsquo;s pseudoanonymous. In practise, this means that your bitcoin transactions are all tied to a pseudo-identity, which can be in theory unconnected to your real world identity. Although in practise this is hard to achieve without some knowhow in computers. <a href="https://www.youtube.com/watch?v=SNssKmeXrGs">Jerry Brito claims in an interview with Vice that you&rsquo;d need to buy bitcoin on the street with cash to guarentee full anonymity.</a></li>
+<li>It&rsquo;s decentralised. This removes the need to trust a third party to manage transactions and inflation.</li>
+</ul>
+
+
+<h3>What bitcoin brings to the table</h3>
+
+<p>Let&rsquo;s summarise:</p>
+
+<h5>Bitcoin is</h5>
+
+<ul>
+<li>a pseudo-anonymous digital currecy.</li>
+<li>a decentralised digital currency.</li>
+<li>a completely fee-free digital currency (minus fees to miners)</li>
+</ul>
+
+
+<h5>Bitcoin is not</h5>
+
+<ul>
+<li>the only digital currency.</li>
+<li>the only anonymous currency.</li>
+<li>the only fee-free digital currency, for many transfers/transactions.</li>
+</ul>
+
+
+<p>Naturally, this leads to the question: Why would the average consumer want to switch to bitcoin? Who does bitcoin offer a real service to?</p>
+
+<p>Anonymity is useful for people who don&rsquo;t want to be caught. Bitcoin offers a genuinely useful product for drug dealers, money launderers, and privacy enthusiasts. In these circles bitcoin is already widely used as a currency.</p>
+
+<p>Decentralisation is desirable for those <strong>who don&rsquo;t trust the banks, and don&rsquo;t want the extra services they offer</strong>. A good example of this is when <a href="http://www.wired.com/2010/12/paypal-wikileaks/">paypal froze payments/donations to WikiLeaks</a>, bitcoin cannot in principle be controlled like this and so it became useful as a means to make donations. Bitcoin thrives here when banks/governments fail in the eyes of enough people. Until then, however, in the battle for your digital transactions, banks offer faster transactions, more security, interest on your money, and many other services that bitcoin does not.</p>
+
+<p>Keeping your money in bitcoin means transactions take minutes rather than seconds to authorise, you have complete responsibility over your private-key &ndash; meaning there&rsquo;s no security to fraud and hacking. The government and banks don&rsquo;t respect it, and for the moment at least, most businesses don&rsquo;t accept it.</p>
+
+<p>It&rsquo;s easy to get swept up in the pro-bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It&rsquo;s important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?</p>
+
+<p>Bitcoin may be an important product to countries who&rsquo;s currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything other than a minority acceptance.</p>
+
+<hr />
+
+<h1>&lsquo;Bitcoin banks&rsquo; and regulation</h1>
+
+<p>Writing the above, I&rsquo;d made the assumption that people store all their bitcoins in their personal bitcoin wallets, and there was no such thing as a <em>Bitcoin bank</em>. The analogy goes like this: If your personal bitcoin wallet is like cash, then there can exist a &lsquo;bitcoin bank&rsquo; that provides the desirable services (like security) given by conventional banks but with bitcoin. In theory, this is possible. And it is here where government regulation becomes very relevant.</p>
+
+<p>Google &lsquo;Bitcoin Bank&rsquo; and the first result is <a href="http://flexcoin.com">flexcoin.com</a>. The information on their website is informative&hellip;</p>
+
+<blockquote><p><strong>Flexcoin is shutting down.</strong> On March 2nd 2014 Flexcoin was attacked and robbed of all coins in the hot wallet. The attacker made off with 896 BTC&hellip; As Flexcoin does not have the resources, assets, or otherwise to come back from this loss, we are closing our doors immediately.</p></blockquote>
+
+<p>The &lsquo;bank&rsquo;, existing to provide security and financial services to bitcoin users, ended up doing exactly the opposite and there&rsquo;s nothing that can be done about it; Bitcoin is not regarded as a currency by government and regulatory organisations, and so bitcoin exchanges and banks go unregulated too. Flexcoin is not alone; <a href="http://lyle.smu.edu/~tylerm/fc13.pdf">nearly 50% of all bitcoin exchanges have failed</a>. Look at the <a href="http://www.flexcoin.com/41.html">legal notice on their information page</a>:</p>
+
+<blockquote><p><strong>Legal Notice:</strong> We are not a true bank that accepts USD or any national currency, only bitcoins which by their nature are not regulated, we’re not FDIC insured or regulated by any government entity.</p></blockquote>
+
+<p>With proper regulation on bitcoin banks and exchanges, flexcoin.com might not have been allowed to exist as it did, and maybe some people would have saved their money. It&rsquo;s important to remember here that regulation is <em>for the banks, not the currency</em>, and at least in the ideal case, its purpose is to avoid catastrophes like flexcoin and MtGox.</p>
+
+<p>Bitcoin banks may in theory be able to provide the same services as conventional banks, but current attempts have widely failed, especially when it comes to security. This is a product of the decentralised and unregulated nature of bitcoin, so time will tell if innovative companies can provide sufficient services to make bitcoin as usable. But the hurdles of regulation and security have yet to be passed.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Chrome extension #1: Subnito]]></title>
+    <link href="http://georgepowell.info/writing/incogno/"/>
+    <updated>2014-03-13T13:48:59+00:00</updated>
+    <id>http://georgepowell.info/writing/incogno</id>
+    <content type="html"><![CDATA[<p>I decided to create a chrome extension last week, it was surprisingly simple. Chrome extensions basically give you a very simple way to inject your own javascript into whatever webpages you like, plus have access to chrome&rsquo;s own APIs for playing with tabs or storing data etc. The whole extension uses nothing but javascript (you can add jquery etc. if you like), and HTML. Even the .manifest file is JSON.</p>
+
+<p>Subnito was my first serious chrome extension. It uses the reddit API to detect if you&rsquo;re browsing an 18+ subreddit on reddit.com and pushes you into incognito mode if so.</p>
+
+<p>The bulk of the work is done in one short file.</p>
+
+<p><strong>background.js</strong>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Trigger this code onBeforeNavigate to any url. This happens even before the web request has been made to increase speed.</span>
+</span><span class='line'><span class="nx">chrome</span><span class="p">.</span><span class="nx">webNavigation</span><span class="p">.</span><span class="nx">onBeforeNavigate</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">details</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">details</span><span class="p">.</span><span class="nx">url</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">bare_url</span> <span class="o">=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;https://&quot;</span><span class="o">&gt;</span><span class="nx">https</span><span class="o">:</span><span class="c1">//&lt;/a&gt;&amp;rdquo;, &amp;ldquo;&amp;rdquo;).replace(&amp;ldquo;&lt;a href=&quot;http://&quot;&gt;http://&lt;/a&gt;&amp;rdquo;, &amp;ldquo;&amp;rdquo;); // remove protocol</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">match_string</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">www</span><span class="p">.</span><span class="nx">reddit</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">r</span><span class="o">/&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">bare_url</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">match_string</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="o">===</span> <span class="nx">match_string</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// check if we&amp;rsquo;re on a reddit subreddit&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">subreddit</span> <span class="o">=</span> <span class="nx">bare_url</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">];</span> <span class="c1">// extract the subreddit name</span>
+</span><span class='line'><span class="c1">// request a json document giving the details of the sub using the reddit API</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&quot;http://www.reddit.com/r/&quot;</span> <span class="o">+</span> <span class="nx">subreddit</span> <span class="o">+</span> <span class="s2">&quot;/about.json&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;over18&#39;</span><span class="p">])</span> <span class="p">{</span> <span class="c1">// check the boolean over18 flag in the returned json</span>
+</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">tabs</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">details</span><span class="p">.</span><span class="nx">tabId</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="p">});</span> <span class="c1">// remove non-incognito tab</span>
+</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">deleteUrl</span><span class="p">({</span> <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="nx">url</span><span class="p">},</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="p">});</span> <span class="c1">// delete url from history completely</span>
+</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">windows</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="nx">url</span><span class="p">,</span> <span class="s2">&quot;incognito&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">});</span> <span class="c1">// open incognito window</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span>
+</span><span class='line'><span class="p">})</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><a href="https://github.com/georgepowell/subnito">Full source code on GitHub</a></p>
+
+<p><a href="https://chrome.google.com/webstore/detail/subnito/cdbdngojiagnofammchefeeaacdifikn">Install on Chrome Store</a></p>
 ]]></content>
   </entry>
   

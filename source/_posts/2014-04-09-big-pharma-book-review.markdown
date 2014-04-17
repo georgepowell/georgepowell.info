@@ -3,7 +3,7 @@ layout: post
 title: "Big Pharma - Book review"
 date: 2014-04-09 10:28:57 +0100
 comments: true
-categories: book-review
+categories: blog book-review
 ---
 
 ![Bad Pharma book cover](http://sciencebasedpharmacy.files.wordpress.com/2012/11/bad-pharma.png)

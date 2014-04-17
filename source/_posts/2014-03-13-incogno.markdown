@@ -3,7 +3,7 @@ layout: post
 title: "Chrome extension #1: Subnito"
 date: 2014-03-13 13:48:59 +0000
 comments: true
-categories: chrome programming javascript
+categories: blog chrome programming javascript
 ---
 
 I decided to create a chrome extension last week, it was surprisingly simple. Chrome extensions basically give you a very simple way to inject your own javascript into whatever webpages you like, plus have access to chrome's own APIs for playing with tabs or storing data etc. The whole extension uses nothing but javascript (you can add jquery etc. if you like), and HTML. Even the .manifest file is JSON.

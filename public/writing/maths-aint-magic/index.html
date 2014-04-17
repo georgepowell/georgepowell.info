@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Gresham's Law and Bitcoin deflation - georgepowell.info</title>
+  <title>Maths ain't magic - georgepowell.info</title>
   <meta name="author" content="George Powell">
 
    
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://georgepowell.info/writing/greshams-law-and-bitcoin-deflation">
+  <link rel="canonical" href="http://georgepowell.info/writing/maths-aint-magic">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -95,7 +95,7 @@
 
   <header>
   <div class="jumbotron">
-    Gresham's Law and Bitcoin Deflation
+    Maths Ain't Magic
 	<h5>
 
 
@@ -108,32 +108,34 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2014-04-10T12:26:40+01:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2014-04-16T23:23:56+01:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time></h5>
   </div>
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p>You&rsquo;re at the local store buying some bread and milk. The cashier asks you for £3.35. You open your wallet and you&rsquo;ve got two £5 notes:</p>
+      <h1>Imaginary numbers and the nature of mathematics</h1>
 
-<h3>Crusty old £5:</h3>
+<p>I first heard of imaginary numbers when someone showed me the <a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a>:</p>
 
-<p><img src="http://i.dailymail.co.uk/i/pix/2011/03/21/article-0-00F3EED2000004B0-407_468x263.jpg" alt="Old note" /></p>
+<p><img src="https://lh4.googleusercontent.com/-nnOUsGwmsEw/AAAAAAAAAAI/AAAAAAAAAAA/xgyUbcFMo6g/photo.jp" alt="Mandelbrot visualisation" /></p>
 
-<h3>Crisp new £5:</h3>
+<p>They described it to me:</p>
 
-<p><img src="http://i.dailymail.co.uk/i/pix/2009/08/24/article-0-00F3EED2000004B0-777_468x249.jpg" alt="New note" /></p>
+<blockquote><p>The x axis is for the real numbers, and the y axis is for the imaginary numbers. The colour of each pixel is determined by the properties of the imaginary and real numbers it represents.</p></blockquote>
 
-<p>Which one do you give to the cashier?</p>
+<p>My reaction was confusion, as it should have been. That picture sure doesn&rsquo;t look imaginary. And how can these numbers exist on a computer if they&rsquo;re imaginary? Maybe I&rsquo;m not smart enough to understand, maybe it&rsquo;s a concept only accessible to the minds of mathematitions. What are imaginary numbers?</p>
 
-<p>Unless you&rsquo;re feeling kind &ndash; that is, you&rsquo;re not an <a href="http://en.wikipedia.org/wiki/Homo_economicus">economic man</a> &ndash; you&rsquo;d want to get rid of your crusty old £5 note; they&rsquo;re worth the same amount to the cashier, so you&rsquo;d be a fool to give up the shiny new one for nothing extra. This is the basis of a paradoxical truth in economics: the measure of a currency&rsquo;s success is if it is used in transactions, yet the <em>shiny, new, better</em> £5 notes will get hoarded while the old ones get traded. <strong>People want to get rid of <em>bad</em> currency, which means it&rsquo;s used more in transactions</strong>. Enter <a href="http://en.wikipedia.org/wiki/Gresham's_law">Gresham&rsquo;s Law</a>:</p>
+<blockquote><p>Well&hellip; They&rsquo;re <em>made up</em> numbers that don&rsquo;t really exist like normal numbers do. There&rsquo;s <strong>no</strong> number that can be squared into a negative number, so we make up the imaginary numbers!</p></blockquote>
 
-<blockquote><p>Gresham&rsquo;s law is an economic principle that states: &ldquo;When a government overvalues one type of money and undervalues another, the undervalued money will leave the country or disappear from circulation into hoards, while the overvalued money will flood into circulation.&rdquo; It is commonly stated as: &ldquo;Bad money drives out good&rdquo;.</p></blockquote>
+<p>I learnt to program in my teens and when I <a href="http://www.newgrounds.com/portal/view/501340">wrote my own mandelbrot set visualiser</a> I realised it doesn&rsquo;t really need <em>imaginary-made-up</em> numbers after all. All it needs is two standard real numbers and a formula.</p>
 
-<p> We can rewrite the above scenario with bitcoin replacing the new shiny £5 note, and our standard fiat currencies as the old one. Presuming bitcoin is accepted universally and is as easy to pay with as paying by card, which one should you choose?</p>
+<p>What&rsquo;s &lsquo;imaginary&rsquo; about imaginary numbers then? Well &lsquo;real&rsquo; negative numbers don&rsquo;t have &lsquo;real&rsquo; square roots, so we call their roots &lsquo;imaginary&rsquo;. It&rsquo;s a <em>name</em>. Are they more imaginary that the &lsquo;real&rsquo; numbers? No. You don&rsquo;t need a special type of calculator or a special kind of pen to calculate with imaginary numbers. It&rsquo;s really not the best naming decision: calling a fundamental and useful concept &lsquo;imaginary&rsquo; scares and confuses people away from trying to understand it. The crux to understanding imaginary numbers is to realise how normal and unimaginary they really are. But <em>shh!</em> Don&rsquo;t tell anyone &ndash; if everyone knew this we&rsquo;d no longer enjoy the reactions of respect and awe that using the term invokes.</p>
 
-<p> Bitcoin is digital gold: there is a finite supply. Cash is subject to continuous steady inflation: its value will always be gradually decreasing. So assuming the novelty of spending bitcoin has worn off in this future, it would make sense to keep your value-preserving-bitcoin and get rid of your cash. This is one reason why economists critisise the deflationary (or at least zero-inflation) nature of bitcoin.</p>
+<p>Mathematics studies <em>formal abstractions</em> &ndash; mental constructions that have been defined so carefully and unambiguously that their properties become objective. 1, 2, 3 and the rest of the counting numbers, they&rsquo;re all abstractions: concepts we create to categorise, percieve and understand the world. We use abstractions to represent things, and whether abstractions are &lsquo;real&rsquo; or not doesn&rsquo;t even matter; <em>they&rsquo;re all as real or unreal as each other</em>. Imaginary numbers exist alongside all the real numbers as mathematical abstractions, and useful tools to represent the world we live in.</p>
 
-<p> The reality is complex, however, and this property doesn&rsquo;t necessarily detract from its other advantages. But this is one reason for believing that even if bitcoin is successful, it won&rsquo;t <em>replace</em> other currencies too easily.</p>
+<p>It&rsquo;s the way the mind works. As individuals and cultures, we develop concepts and abstractions to represent the world and its behaviour &ndash; mathematics studies the subset of these concepts that have been formally defined. To know <em>what infinity is</em>, or <em>what an imaginary number is</em>, is really just knowing how the mind uses abstractions to represent our surroundings.</p>
+
+<p>The view that mathematics is just concepts and abstractions in our psychology is far from the only accepted philosophy. There&rsquo;s <a href="http://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought">plenty of schools of thought</a> around what maths is. For me, however, any existential or borderline-spiritual view of mathematical knowledge has caused more confusion and  gotten in the way of learning the actual maths.</p>
 
     </div>
   </div>
@@ -152,11 +154,9 @@
 
 
 
-  <a href="/categories/bitcoin/"><span class="badge">bitcoin</span></a>
-
   <a href="/categories/blog/"><span class="badge">blog</span></a>
 
-  <a href="/categories/economics/"><span class="badge">economics</span></a>
+  <a href="/categories/maths/"><span class="badge">maths</span></a>
 
 
 
@@ -186,10 +186,8 @@
       <div class="span12">
         <p class="meta">
           
-            <a class="basic-alignment left" href="/writing/big-pharma-book-review/" title="Previous Post: Big Pharma - Book review">&laquo; Big Pharma - Book review</a>
+            <a class="basic-alignment left" href="/writing/greshams-law-and-bitcoin-deflation/" title="Previous Post: Gresham's Law and Bitcoin deflation">&laquo; Gresham's Law and Bitcoin deflation</a>
           
-          
-            <a class="basic-alignment right" href="/writing/maths-aint-magic/" title="Next Post: Maths ain't magic">Maths ain't magic &raquo;</a>
           
         </p>
       </div>
