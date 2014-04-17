@@ -13,7 +13,23 @@ Who am I?
 
 ![Me](/images/me.png)
 
-I'm a software developer currently studying computer science at the University of Sheffield. I enjoy making things, designing things, writing, and solving problems. I also love the outdoors and try to keep a large collection of hobbies like slacklining, rock climbing, cycling and [juggling](http://www.youtube.com/watch?v=3zJC3dYOOv4).
+I'm a software developer currently studying computer science at the University of Sheffield. I enjoy making things, designing things, writing, and solving problems. I also love the outdoors and try to keep a collection of hobbies like slacklining, rock climbing, cycling and [juggling](http://www.youtube.com/watch?v=3zJC3dYOOv4).
+
+I'm happy to be contacted for software development positions. Feel free to [drop me an email at georgepowell_1@hotmail.co.uk](mailto:georgepowell_1@hotmail.co.uk).
+
+## Skills
+
+ - **Extremely fast software prototyping**
+
+   Building usable demos or proof of concepts within hours.
+
+ - **Writing clean and concise code**
+   
+   Working towards the ideal of being self-documenting with no need for comments.
+
+ - **Communicating, writing, and public speaking**
+
+   Communicating and discussing ideas is as important as the ideas themselves. I enjoy writing and explaining things, and am confident with public speaking.
 
 ## Work
 <!--

@@ -8,7 +8,7 @@ categories: blog octopress setup
 
 ### ... From the beautiful mix of technologies that make this site
 
-I've put off making a website for so long (I've had this domain pointing to nothing for 2+ years) because I believed that if I was going to do it, I'd do it *properly* and build the whole thing myself. But I hate CSS and I've always found more fun things to do. I've finally found a few technologies cool enough for me to get excited about using, and it took me literally an hour to get this fancy looking site running.
+I've put off making a website for so long (I've had this domain pointing to nothing for 2+ years) because I believed that if I was going to do it, I'd do it *properly* and build the whole thing myself. But I dislike CSS and I've always found more fun things to do. I've finally found a few technologies cool enough for me to get excited about using, and it only took an hour to get this fancy looking site running.
 
 ## Octopress
 
@@ -16,6 +16,6 @@ I've put off making a website for so long (I've had this domain pointing to noth
 
 ## Heroku
 
-[Heroku](https://www.heroku.com/) is a friendly, free hosting website that supports ruby apps and deploying with a 'git push heroku master'. Couldn't be simpler.
+[Heroku](https://www.heroku.com/) is a hosting website that supports ruby apps and deploying with a 'git push heroku master'. Couldn't be simpler.
 
 This website's sourcecode is available (complete with all posts in markdown) on [my GitHub page](https://github.com/georgepowell), but if you want to make a copycat of some sort you'd be best working from the octopress default template directly.
