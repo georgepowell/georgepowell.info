@@ -2,7 +2,7 @@
 layout: page
 title: "About Me"
 date: 2014-03-12 19:48
-comments: true
+comments: false
 sharing: true
 footer: true
 ---
