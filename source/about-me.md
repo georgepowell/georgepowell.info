@@ -27,3 +27,7 @@ I'm a software developer currently studying computer science at the University o
    
    Worked with an experienced team of senior developers adding features to a mature covert tracking application.
 
+## Education
+
+ - A Levels: **AAAA** in Maths, Further Maths, Physics and Chemistry at Ermysted's Grammar School, Skipton
+ - MSc. Computer Science w. year in industry - University of Sheffield (graduating 2016)
