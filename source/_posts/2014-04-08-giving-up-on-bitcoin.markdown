@@ -67,7 +67,7 @@ Bitcoin may be an important product to countries who's currencies are failing th
 
 Writing the above, I'd made the assumption that people store all their bitcoins in their personal bitcoin wallets, and there was no such thing as a *Bitcoin bank*. The analogy goes like this: If your personal bitcoin wallet is like cash, then there can exist a 'bitcoin bank' that provides the desirable services (like security) given by conventional banks but with bitcoin. In theory, this is possible. And it is here where government regulation becomes very relevant.
 
-Google 'Bitcoin Bank' and the first result is [flexcoin.com](http://flexcoin.com). The information on their website is informative...
+Google 'Bitcoin Bank' and the first result is [flexcoin.com](http://flexcoin.com). The information on their website is telling...
 
  > **Flexcoin is shutting down.** On March 2nd 2014 Flexcoin was attacked and robbed of all coins in the hot wallet. The attacker made off with 896 BTC... As Flexcoin does not have the resources, assets, or otherwise to come back from this loss, we are closing our doors immediately.
 

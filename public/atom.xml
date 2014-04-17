@@ -4,7 +4,7 @@
   <title><![CDATA[georgepowell.info]]></title>
   <link href="http://georgepowell.info/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-04-17T12:12:38+01:00</updated>
+  <updated>2014-04-17T16:59:58+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -36,7 +36,7 @@
 
 <p>What&rsquo;s &lsquo;imaginary&rsquo; about imaginary numbers then? Well &lsquo;real&rsquo; negative numbers don&rsquo;t have &lsquo;real&rsquo; square roots, so we call their roots &lsquo;imaginary&rsquo;. It&rsquo;s a <em>name</em>. Are they more imaginary that the &lsquo;real&rsquo; numbers? No. You don&rsquo;t need a special type of calculator or a special kind of pen to calculate with imaginary numbers. It&rsquo;s really not the best naming decision: calling a fundamental and useful concept &lsquo;imaginary&rsquo; scares and confuses people away from trying to understand it. The crux to understanding imaginary numbers is to realise how normal and unimaginary they really are.</p>
 
-<p>Mathematics studies <em>formal abstractions</em> &ndash; mental constructions that have been defined so carefully and unambiguously that their properties become objective. 1, 2, 3 and the rest of the counting numbers, they&rsquo;re all abstractions: concepts we create to categorise, percieve and understand the world. We use abstractions to represent things, and whether abstractions are &lsquo;real&rsquo; or not doesn&rsquo;t even matter; <em>they&rsquo;re all as real or unreal as each other</em>. Imaginary numbers exist alongside all the real numbers as mathematical abstractions, and useful tools to represent the world we live in.</p>
+<p>Mathematics studies <em>formal abstractions</em> &ndash; mental constructions that have been defined so carefully and unambiguously that their properties become objective. 1, 2, 3 and the rest of the counting numbers, they&rsquo;re all abstractions: concepts we create to categorise, percieve and understand the world. We use abstractions to represent things, and whether abstractions are &lsquo;real&rsquo; or not doesn&rsquo;t even matter; <em>they&rsquo;re all as real or unreal as each other</em>. <strong>Imaginary numbers and real numbers exist equivalently as mathematical abstractions</strong>; useful tools to represent the world we live in.</p>
 
 <p>It&rsquo;s the way the mind works. We develop concepts and abstractions to represent the world and its behaviour &ndash; mathematics studies the subset of these concepts that have been formally defined. To know <em>what infinity is</em>, or <em>what an imaginary number is</em>, is really just knowing how the mind uses abstractions to represent our surroundings.</p>
 
@@ -175,7 +175,7 @@
 
 <p>Writing the above, I&rsquo;d made the assumption that people store all their bitcoins in their personal bitcoin wallets, and there was no such thing as a <em>Bitcoin bank</em>. The analogy goes like this: If your personal bitcoin wallet is like cash, then there can exist a &lsquo;bitcoin bank&rsquo; that provides the desirable services (like security) given by conventional banks but with bitcoin. In theory, this is possible. And it is here where government regulation becomes very relevant.</p>
 
-<p>Google &lsquo;Bitcoin Bank&rsquo; and the first result is <a href="http://flexcoin.com">flexcoin.com</a>. The information on their website is informative&hellip;</p>
+<p>Google &lsquo;Bitcoin Bank&rsquo; and the first result is <a href="http://flexcoin.com">flexcoin.com</a>. The information on their website is telling&hellip;</p>
 
 <blockquote><p><strong>Flexcoin is shutting down.</strong> On March 2nd 2014 Flexcoin was attacked and robbed of all coins in the hot wallet. The attacker made off with 896 BTC&hellip; As Flexcoin does not have the resources, assets, or otherwise to come back from this loss, we are closing our doors immediately.</p></blockquote>
 
