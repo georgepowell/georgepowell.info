@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-04-17T17:38:24+01:00</updated>
+  <updated>2014-04-30T10:56:07+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[I, for one, welcome our new insect overlords]]></title>
+    <link href="http://georgepowell.info/writing/i-for-one-welcome-our-new-insect-overlords/"/>
+    <updated>2014-04-29T12:29:17+01:00</updated>
+    <id>http://georgepowell.info/writing/i-for-one-welcome-our-new-insect-overlords</id>
+    <content type="html"><![CDATA[<h2>Why creating autonomous flying honey bee robots is the next logical step</h2>
+
+<p>From <strong>The Terminator&rsquo;s</strong> cold hearted cyborg assasin, to the heart-throb operating system &lsquo;Samantha&rsquo; in <strong>Her</strong>, science fiction has long been predicting the rise of humanoid robots. The huge potential for AI and robotics to either improve or destroy our society has been illustrated dramatically in Isaac Asimov&rsquo;s I-robot &ndash; with a utopian work-free society turning quickly to a robot-controlled utilitarian dictatorship. However, regardless of the disruption these technologies will bring, research and innovation into autonomous robotics will continue at an always increasing rate.</p>
+
+<p><a href="http://greenbrain.group.shef.ac.uk/">Sheffield&rsquo;s Green Brain project</a> aims to contribute to this revolution by reverse engineering the brain of a honey bee, and creating autonomous flying honey bee robots. Within the Kroto Innovation center at the University of Sheffield, their setup is impressive: A clinically white observation room, with a large window on one side, sits almost empty apart from three powerful, expensive gaming PCs stacked in the corner, and a dark metalic quadrocopter sitting apprehensively in the center, tied down with string to keep it from &ndash; we can only assume &ndash; trying to escape.</p>
+
+<p>The quadrocopter is the honey bee &ndash; kitted up at every corner with sensors and recievers, mimicking accurately those of an actual bee. The gaming PCs are its <em>brain</em> &ndash; simulating a large and complex neural network on massively parallel GPUs.</p>
+
+<p><img src="https://pbs.twimg.com/media/BauASAcCUAAdeJK.jpg" alt="" /></p>
+
+<p>This is the result of over two year&rsquo;s hard work from the Green Brain Team &ndash; a small but impressive team of academics and engineers working at Sheffield. This work, they claim, is the next logical step in driving forward our understanding of our minds, and perhaps bring us closer to the society abound with robots predicted unanimously by science fiction.</p>
+
+<!-- more -->
+
+
+<h2>But why a bee?</h2>
+
+<p>You may have heard of <a href="http://en.wikipedia.org/wiki/Colony_collapse_disorder">Colony collapse disorder</a>, it&rsquo;s a name given to the very misunderstood mass-collapse of honey bee populations across the world. It&rsquo;s due to many complex interacting factors that have unfortunately resisted fitting into any soundbite-sized headlines. Bees play a vital role in many ecological systems, so it&rsquo;s consequences could be dire: disrupting our food supply and many delicately sustained wildlife habitats that depend on them.</p>
+
+<p><img src="http://i.kinja-img.com/gawker-media/image/upload/s--XwLC-sCI--/180x5ftul0rerjpg.jpg" alt="" /></p>
+
+<p>Here, some of the goals of the Green Brain Team become justified: If they can simulate a bee from scratch with an accuracy sufficient to reproduce charictaristics and behaviours of actual honey bees, they will have developed an invaluable tool to understanding and countering colony collapse disorder. As James Marshall &ndash; the leader of the Green Brain project &ndash; says: &ldquo;robots give behavioral biologists the freedom to explore the mind of an animal in ways that would not be possible with living subjects&rdquo;.</p>
+
+<p>Replacing dying honey bees with ungainly flying quadrocopters is farfetched at best. And although creating &ldquo;artificial pollinators&rdquo; has been mentioned as as a potential use for this technology, fortunately the act of researching and understanding the bee&rsquo;s behaviours is a valid and more realistic goal.</p>
+
+<h2>From worms to humans &ndash; choosing the scale of the next AI</h2>
+
+<p>The Green Brain Project is named after a more ambitious effort &ndash; <a href="http://bluebrain.epfl.ch/page-52063.html">The Blue Brain Project</a> &ndash; which aims to simulate the entire human brain at a molecular level. The Blue Brain project is still in its early stages, having limited success in simulating a single cortical column of a rat. The Green and Blue brain projects are just two of many projects aiming to simulate brains at varying scales.</p>
+
+<p>At the other extreme sits <a href="http://www.openworm.org/getting_started.html">The Open Worm Project</a>: aiming to simulate the neural and muscular workings of a microscopic worm, containing only <strong>one-thousand cells</strong> and about <strong>three-hundred neurons</strong>. Although this organism appears simple, the individuals working on the team believe it&rsquo;s the right scale to focus on given our current level of technology and biological understanding, and they might be right: even making quite basic predictions about the worm&rsquo;s movement based on their model has been very difficult.</p>
+
+<p><img src="http://www.artificialbrains.com/images/openworm/openworm-nervous-system-3d-green.png" alt="" /></p>
+
+<p>Although these projects have different ambitions, working at dramatically different scales, they are producing new results and knowledge that will help each other progress faster than they ever could alone. There is no single correct scale that brain simulation research should focus; it is only by tackling the problem from every angle at once that we can understand it deeply.</p>
+
+<h2>The reality is tough</h2>
+
+<p>Both the Blue Brain and Open Worm projects exist purely in a simulated world. This comes with a huge amount of freedom; it&rsquo;s easier to measure, manipulate and control virtual worlds &ndash; the temptation is obvious. However, the Green Brain is built to control a physical quadrocopter.</p>
+
+<p>A well known joke goes as follows:</p>
+
+<ul>
+<li><p><em>The problem with engineers is that they tend to cheat in order to get results.</em></p></li>
+<li><p><em>The problem with mathematicians is that they tend to work on toy problems in order to get results.</em></p></li>
+<li><p><em>The problem with computer scientists is that they tend to cheat at toy problems in order to get results.</em></p></li>
+</ul>
+
+
+<p>Simulating a brain is not a toy problem. There&rsquo;s no reason a realistic simulation of the honey bee brain, or any other brain for that matter, should be clean and mathematical &ndash; <strong>it needs to work in real life</strong>. Ensuring this focus on results in the messy and complicated real world is the reason behind the Green Brain&rsquo;s physical manifestation as a quadrocopter. Virtual worlds and simulations are by their definition mere cleaned-up estimations of the real world. The team believe with good reason that pushing their simulation to work in real environments will force them to solve difficult problems that could be simplified away in a virtual world.</p>
+
+<p><img src="https://pbs.twimg.com/profile_banners/2215802294/1385476024/web" alt="" /></p>
+
+<h2>The rise of the quad</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Maths ain't magic]]></title>
@@ -186,74 +247,6 @@
 <p>With proper regulation on bitcoin banks and exchanges, flexcoin.com might not have been allowed to exist as it did, and maybe some people would have saved their money. It&rsquo;s important to remember here that regulation is <em>for the banks, not the currency</em>, and at least in the ideal case, its purpose is to avoid catastrophes like flexcoin and MtGox.</p>
 
 <p>Bitcoin banks may in theory be able to provide the same services as conventional banks, but current attempts have widely failed, especially when it comes to security. This is a product of the decentralised and unregulated nature of bitcoin, so time will tell if innovative companies can provide sufficient services to make bitcoin as usable. But the hurdles of regulation and security have yet to be passed.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Chrome extension #1: Subnito]]></title>
-    <link href="http://georgepowell.info/writing/incogno/"/>
-    <updated>2014-03-13T13:48:59+00:00</updated>
-    <id>http://georgepowell.info/writing/incogno</id>
-    <content type="html"><![CDATA[<p>I decided to create a chrome extension last week, it was surprisingly simple. Chrome extensions basically give you a very simple way to inject your own javascript into whatever webpages you like, plus have access to chrome&rsquo;s own APIs for playing with tabs or storing data etc. The whole extension uses nothing but javascript (you can add jquery etc. if you like), and HTML. Even the .manifest file is JSON.</p>
-
-<p>Subnito was my first serious chrome extension. It uses the reddit API to detect if you&rsquo;re browsing an 18+ subreddit on reddit.com and pushes you into incognito mode if so.</p>
-
-<p>The bulk of the work is done in one short file.</p>
-
-<p><strong>background.js</strong>
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Trigger this code onBeforeNavigate to any url. This happens even before the web request has been made to increase speed.</span>
-</span><span class='line'><span class="nx">chrome</span><span class="p">.</span><span class="nx">webNavigation</span><span class="p">.</span><span class="nx">onBeforeNavigate</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">details</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">details</span><span class="p">.</span><span class="nx">url</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">bare_url</span> <span class="o">=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;https://&quot;</span><span class="o">&gt;</span><span class="nx">https</span><span class="o">:</span><span class="c1">//&lt;/a&gt;&amp;rdquo;, &amp;ldquo;&amp;rdquo;).replace(&amp;ldquo;&lt;a href=&quot;http://&quot;&gt;http://&lt;/a&gt;&amp;rdquo;, &amp;ldquo;&amp;rdquo;); // remove protocol</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">match_string</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">www</span><span class="p">.</span><span class="nx">reddit</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">r</span><span class="o">/&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">bare_url</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">match_string</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="o">===</span> <span class="nx">match_string</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// check if we&amp;rsquo;re on a reddit subreddit&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">subreddit</span> <span class="o">=</span> <span class="nx">bare_url</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">];</span> <span class="c1">// extract the subreddit name</span>
-</span><span class='line'><span class="c1">// request a json document giving the details of the sub using the reddit API</span>
-</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&quot;http://www.reddit.com/r/&quot;</span> <span class="o">+</span> <span class="nx">subreddit</span> <span class="o">+</span> <span class="s2">&quot;/about.json&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;over18&#39;</span><span class="p">])</span> <span class="p">{</span> <span class="c1">// check the boolean over18 flag in the returned json</span>
-</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">tabs</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">details</span><span class="p">.</span><span class="nx">tabId</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="p">});</span> <span class="c1">// remove non-incognito tab</span>
-</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">deleteUrl</span><span class="p">({</span> <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="nx">url</span><span class="p">},</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="p">});</span> <span class="c1">// delete url from history completely</span>
-</span><span class='line'>        <span class="nx">chrome</span><span class="p">.</span><span class="nx">windows</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="nx">url</span><span class="p">,</span> <span class="s2">&quot;incognito&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">});</span> <span class="c1">// open incognito window</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span>
-</span><span class='line'><span class="p">})</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p><a href="https://github.com/georgepowell/subnito">Full source code on GitHub</a></p>
-
-<p><a href="https://chrome.google.com/webstore/detail/subnito/cdbdngojiagnofammchefeeaacdifikn">Install on Chrome Store</a></p>
 ]]></content>
   </entry>
   
