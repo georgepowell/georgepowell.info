@@ -64,3 +64,7 @@ I'm happy to be contacted for software development positions. Feel free to [drop
    **A** - *Physics*
 
    **A** - *Chemistry*
+
+   
+<br/>
+<a href="http://stackexchange.com/users/55154/george-powell"><img src="http://stackexchange.com/users/flair/55154.png" width="208" height="58" alt="profile for George Powell on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for George Powell on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
