@@ -4,7 +4,7 @@
   <title><![CDATA[georgepowell.info]]></title>
   <link href="http://georgepowell.info/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-05-08T13:52:19+01:00</updated>
+  <updated>2014-05-08T13:54:49+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -18,7 +18,9 @@
     <link href="http://georgepowell.info/writing/i-for-one-welcome-our-new-insect-overlords/"/>
     <updated>2014-04-29T12:29:17+01:00</updated>
     <id>http://georgepowell.info/writing/i-for-one-welcome-our-new-insect-overlords</id>
-    <content type="html"><![CDATA[<h2>Why creating autonomous honey bee quad-copters is the next logical step.</h2>
+    <content type="html"><![CDATA[<p><em>This post was written as a university assignment April 2014. I&rsquo;ve been offered a 6 week internship working for the Green Brain Project in Summer 2014.</em></p>
+
+<h2>Why creating autonomous honey bee quad-copters is the next logical step.</h2>
 
 <p>From <strong>The Terminator&rsquo;s</strong> cold hearted cyborg assassin, to the heart-throb operating system <em>Samantha</em> in <strong>Her</strong>, science fiction has long been predicting the rise of humanoid robots. The huge potential for AI and robotics to either improve or destroy our society has been illustrated countless times, including Isaac Asimov&rsquo;s dramatic I-robot &ndash; with a utopian work-free society turning quickly to a robot-controlled utilitarian dictatorship. However, regardless of the disruption these technologies will bring, research and innovation into autonomous robotics will continue at an always increasing rate.</p>
 

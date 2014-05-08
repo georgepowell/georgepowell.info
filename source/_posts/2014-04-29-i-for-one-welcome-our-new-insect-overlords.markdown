@@ -6,6 +6,8 @@ comments: true
 categories: blog robotics
 ---
 
+*This post was written as a university assignment April 2014. I've been offered a 6 week internship working for the Green Brain Project in Summer 2014.*
+
 ##Why creating autonomous honey bee quad-copters is the next logical step.
 
 From **The Terminator's** cold hearted cyborg assassin, to the heart-throb operating system *Samantha* in **Her**, science fiction has long been predicting the rise of humanoid robots. The huge potential for AI and robotics to either improve or destroy our society has been illustrated countless times, including Isaac Asimov's dramatic I-robot - with a utopian work-free society turning quickly to a robot-controlled utilitarian dictatorship. However, regardless of the disruption these technologies will bring, research and innovation into autonomous robotics will continue at an always increasing rate.
