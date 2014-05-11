@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-05-08T16:17:44+01:00</updated>
+  <updated>2014-05-11T14:12:13+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Science, Morality and Politics]]></title>
+    <link href="http://georgepowell.info/writing/science-morality-and-politics/"/>
+    <updated>2014-05-11T10:59:34+01:00</updated>
+    <id>http://georgepowell.info/writing/science-morality-and-politics</id>
+    <content type="html"><![CDATA[<p>There&rsquo;s a philosophical position that goes something like this:</p>
+
+<blockquote><p>A statement that has no <em>predictive</em> power, and therefore cannot be shown to be true or false, is meaningless.</p></blockquote>
+
+<p>This is an attractive stance for the scientist who spends his or her life investigating and refining predictive models; it suggests a true objectivity to the world. It narrows the scope of knowledge down to that in which they are an expert. And if there&rsquo;s one undebatable truth in philosophy, it&rsquo;s that there are no undebatable truths in philosophy. And even that&rsquo;s debated.</p>
+
+<p>Philosophical knowledge, by its very nature, is that set of knowledge that cannot be verified by experiment. It can&rsquo;t have predictive power: if it did it would no longer be philosophical. To the hard-line scientist, this is the ultimate shoot-down to philosphy, it makes philosophy meaningless.</p>
+
+<p>But there is a second role of knowledge missing from this view. Even without predictive power, knowledge and beliefs effect our behaviour and decisions. Enter moral philosphy: the world of knowledge that, despite not being verifiable, influences every action we make. Although, to the scientist, subjectivity may be seen as inherently negative, even the most stringent scientist will hold personal ethical beliefs, out of touch from their science. It&rsquo;s the point of the quote that ended my <a href="/../writing/i-for-one-welcome-our-new-insect-overlords/">last post</a>; talking about the inability of science to guide our decisions, Feynman concludes: <em>&ldquo;&hellip; at the end, <strong>you</strong> must have some ultimate judgment.&rdquo;</em></p>
+
+<h2>Moral framework</h2>
+
+<p>A moral framework is a set of beliefs &ndash; held by an individual &ndash; that can be used to ultimately answer all behavioural dilemmas. It fills the gap left by science, and exists as the ultimate end to <em>why</em> we do something the way we do. It adds a connection between our ideas of <em>good</em> and <em>bad</em> and the the real world. To use a moral framework is to take a choice of possible actions, judge their worth according to the criteria withing the framework, and choose the action of the most moral worth. As a computer scientist, it is analagous to a <a href="http://en.wikipedia.org/wiki/State_space_search">state-space search</a> or the <a href="http://en.wikipedia.org/wiki/Minimax">mini-max algorithm</a> &ndash; both exist to make decisions in a simulated world based purely on some external measure of &ldquo;success&rdquo;.</p>
+
+<p>Although moral frameworks are subjective, most of us share some intuitive, ambigious ideas of right and wrong. It&rsquo;s wrong to hurt someone. It&rsquo;s wrong to take away someone&rsquo;s freedom. Our actions may be judged by their consequences to people&rsquo;s happiness. Our actions may also be judged on our <em>intent</em>. Some actions can be wrong <em>in principle</em>, regardless of circumstance. These views can all be true to different extents for different people. And people struggle internally with how to bind them together into a single unambiguous moral framework. It&rsquo;s possible to try and reason and justify these views, but being within the realm of philosphical knowledge, it often results in unresolvable ideological food-fights.</p>
+
+<h2>Where does science come in?</h2>
+
+<p>It&rsquo;s established that science alone cannot derive an objective moral framework or ideology. It&rsquo;s the ultimate reason that political debate often seems so futile and endless. It creates a frustration amongst scientists, so used to seeking objectivity in their field, that they call for scientific principles to be introduced into policy making &ndash; with the hope of ending this ongoing political shouting in favour of evidence based policy. But if our ideologies are personally chosen, what is the role of science in policy making?</p>
+
+<p>A policy is not the same as an ideology. A policy is a set of real-world rules, that have real-world consequences <em>hopefully</em> aligning with the ideology of the policy-creator. Say the politician in charge is a libertarian: he believes the worth of a policy should be judged by its effects in enabling <strong>individual freedom. </strong>The policy gives people freedom? <strong>GOOD.</strong> The policy takes away people&rsquo;s freedom? <strong>BAD.</strong> The politician justifies his no-taxes, no-regulation economic policies with his ideology:</p>
+
+<blockquote><p>Taxes and regulation take away the freedom of individuals to trade with each other as they both see fit. Taking away money and enforcing our own rules on other people&rsquo;s personal trades is <em>wrong</em> because they should have the freedom to trade with each other as they want, so long as the trade doesn&rsquo;t take away the rights of others.</p></blockquote>
+
+<p>On its surface, it may look like this policy is only debatable on ideological grounds. But look deeper and we can see how this policy actually has two parts: The ideology is to promote freedom to individuals, the claim is that reducing taxes and regulation <em>will result</em> in satisfying these ends.</p>
+
+<p>Say the policy is implemented. People are free to trade as they see fit within the lenient restraints of the new &lsquo;libertarian&rsquo; society. Say, over time the economy grows and large companies are allowed to form and merge. It turns out, in this society, that it is in the large companies' profit interests to fix prices and create repressive monopolies &ndash; harvesting all wealth from the less well off and restricting their employment options so, given a <em>free</em> choice under the law, they <em>have</em> to choose to work for the monopolistic companies. It&rsquo;s the only option to survive. Would the libertarian politician &ndash; who values social mobility and individual freedoms &ndash; consider this society &lsquo;free&rsquo;? If he&rsquo;d have known that the long term consequences of his policies would be that the 99% do not have a practical choice over their lifestyle or employment?</p>
+
+<p>It&rsquo;s a hypothetical story, the point is not about economics, and it is especially not a criticism aimed at the libertarianism ideology. Instead, the story illustrates that an acceptable justification of a policy should rest on more than just an ideology. The failure of the above policy in achieving its ideological aims was not a fault of the ideology itself, it was the fault of the politician&rsquo;s nieve understanding of the policy&rsquo;s consequences.</p>
+
+<h2>Evidence based policy</h2>
+
+<p>When scientists like me call for science based policy, we should call only for the <em>consequences</em> of policies to be investigated scientifically, not their ideological foundations. The nievity of politicians regarding the consequences of their own policies is solvable by science, and it is here that sciece based policy should flourish. Ignorance about the limitations of science, which politicians may be more aware of than the scientist, unecessarily weaken the otherwise valid and important efforts of the scientists in improving the quality of our policies. Science should have its place in politics, but misunderstandings and confusions about the roles of science and ideology need to be tackled before the scientific method can be fully taken advantage of within politics.</p>
+
+<!--
+ - Defense of philosophy
+ - Subjectivity of philosophy
+ - Definition of morality and moral framework
+ - Example of using science and libertarianism to justify economic policy scientifically
+ - Conclusion: current debate around science's place in politics needs to understand it's limitations.
+ -->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I, for one, welcome our new insect overlords]]></title>
@@ -196,95 +246,6 @@
 <p>I really enjoyed and learnt a lot from this book, and I&rsquo;d recommend it especially to those involved in medicine &ndash; who will be in a better position than I am to comment on the problems raised here, and maybe do something about them.</p>
 
 <p><a href="http://www.amazon.co.uk/Bad-Pharma-How-Medicine-Broken/dp/000749808X">Buy Ben Goldacre&rsquo;s Bad Pharma on Amazon.co.uk</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Bitcoin as a product]]></title>
-    <link href="http://georgepowell.info/writing/giving-up-on-bitcoin/"/>
-    <updated>2014-04-08T14:33:37+01:00</updated>
-    <id>http://georgepowell.info/writing/giving-up-on-bitcoin</id>
-    <content type="html"><![CDATA[<p><em>Please note I&rsquo;m not an expert on Bitcoin. I write about this stuff for fun.</em></p>
-
-<p>I&rsquo;ve been close to investing in Bitcoin over the past couple of months; its promise as a technology comparable to the internet of 20 years ago is severely tempting. If it ever gains wide acceptence, even a small investment could be worth big money in the coming decades. But I&rsquo;ve given up &ndash; for the moment at least &ndash; on that hope. Here&rsquo;s why:</p>
-
-<h3>Money for the people</h3>
-
-<p>Bitcoin is oft peddled with an economic libertarian ideology. Our fiat currencies are controlled and regulated by the banks and governments, adding fees and friction to transactions. By relying on the system as it is, we hand our power to an unrepresentative minority who can profit from and manipulate our fiat currencies, not necessarily with the majority&rsquo;s best interests in mind. Bitcoin is a decentralised currency that can&rsquo;t be controlled by an individual party, it lets regular folk and small businesses make transactions to each other without needing to trust a third party. This is true, but it&rsquo;s not the whole story.</p>
-
-<h3>The current system</h3>
-
-<p>To gain a real understanding of where bitcoin sits as a technology, we need to understand how the current system works, and what problems (if any) bitcoin solves.</p>
-
-<p>First, lets look at hard cash &ndash; the stuff we carry around in our wallets. Already, cash has some of the essential properties that bitcoin claims: It&rsquo;s untracable, unregulatable, and anonymous; perhaps to a greater extent even than bitcoin. Cash is used for drugs, weapons, money laundering, untaxed income, you name it. Nobody can charge a small business for the right to accept cash. Cash falls down at two hurdles, however: it&rsquo;s not digital, and control of its production is centralised. We&rsquo;ll look at what this really means in a second.</p>
-
-<p>Now lets look at banks and the digitised money they offer through debit and credit cards. By digitising our cash and giving it to the banks, some important things have now changed: it is no longer untracable, anonymous, and unregulatable. By trusting the banks with our money we have sacrificed this for some serious benefits: They keep our money more secure than we could realistically keep cash, they offer fast digital transactions around the world and online, often with no fees or friction, and they offer interest on our savings at no extra cost. The currency is still the same as our cash, so production doesn&rsquo;t change hands. The important thing to realise here is that banks are offering a real service to us in securing and digitising our cash, and in some sense bitcoin must solve a problem not already solved by the combination of modern banking and cash.</p>
-
-<!-- more -->
-
-
-<h3>Bitcoin as a product</h3>
-
-<p>Finally, lets look at how bitcoin fairs.</p>
-
-<ul>
-<li>It&rsquo;s digital. Like the online banking and cards offered by the banks, bitcoin allows transactions to anywhere in the world with the click of a button.</li>
-<li>It&rsquo;s pseudoanonymous. In practise, this means that your bitcoin transactions are all tied to a pseudo-identity, which can be in theory unconnected to your real world identity. Although in practise this is hard to achieve without some knowhow in computers. <a href="https://www.youtube.com/watch?v=SNssKmeXrGs">Jerry Brito claims in an interview with Vice that you&rsquo;d need to buy bitcoin on the street with cash to guarentee full anonymity.</a></li>
-<li>It&rsquo;s decentralised. This removes the need to trust a third party to manage transactions and inflation.</li>
-</ul>
-
-
-<h3>What bitcoin brings to the table</h3>
-
-<p>Let&rsquo;s summarise:</p>
-
-<h5>Bitcoin is</h5>
-
-<ul>
-<li>a pseudo-anonymous digital currecy.</li>
-<li>a decentralised digital currency.</li>
-<li>a completely fee-free digital currency (minus fees to miners)</li>
-</ul>
-
-
-<h5>Bitcoin is not</h5>
-
-<ul>
-<li>the only digital currency.</li>
-<li>the only anonymous currency.</li>
-<li>the only fee-free digital currency, for many transfers/transactions.</li>
-</ul>
-
-
-<p>Naturally, this leads to the question: Why would the average consumer want to switch to bitcoin? Who does bitcoin offer a real service to?</p>
-
-<p>Anonymity is useful for people who don&rsquo;t want to be caught. Bitcoin offers a genuinely useful product for drug dealers, money launderers, and privacy enthusiasts. In these circles bitcoin is already widely used as a currency.</p>
-
-<p>Decentralisation is desirable for those <strong>who don&rsquo;t trust the banks, and don&rsquo;t want the extra services they offer</strong>. A good example of this is when <a href="http://www.wired.com/2010/12/paypal-wikileaks/">paypal froze payments/donations to WikiLeaks</a>, bitcoin cannot in principle be controlled like this and so it became useful as a means to make donations. Bitcoin thrives here when banks/governments fail in the eyes of enough people. Until then, however, in the battle for your digital transactions, banks offer faster transactions, more security, interest on your money, and many other services that bitcoin does not.</p>
-
-<p>Keeping your money in bitcoin means transactions take minutes rather than seconds to authorise, you have complete responsibility over your private-key &ndash; meaning there&rsquo;s no security to fraud and hacking. The government and banks don&rsquo;t respect it, and for the moment at least, most businesses don&rsquo;t accept it.</p>
-
-<p>It&rsquo;s easy to get swept up in the pro-bitcoin mantra, however I struggle to see what bitcoin offers the majority of the population. It&rsquo;s important to analyse the currency as a product competing with what the banks already offer. Who really wants to sacrifice the services, security and regulation offered by the banks in exchange for a difficult to maintain anonymity and a vague feeling of control?</p>
-
-<p>Bitcoin may be an important product to countries who&rsquo;s currencies are failing them, and to those who need anonymity. But bitcoin needs to offer a lot more to gain anything other than a minority acceptance.</p>
-
-<hr />
-
-<h1>&lsquo;Bitcoin banks&rsquo; and regulation</h1>
-
-<p>Writing the above, I&rsquo;d made the assumption that people store all their bitcoins in their personal bitcoin wallets, and there was no such thing as a <em>Bitcoin bank</em>. The analogy goes like this: If your personal bitcoin wallet is like cash, then there can exist a &lsquo;bitcoin bank&rsquo; that provides the desirable services (like security) given by conventional banks but with bitcoin. In theory, this is possible. And it is here where government regulation becomes very relevant.</p>
-
-<p>Google &lsquo;Bitcoin Bank&rsquo; and the first result is <a href="http://flexcoin.com">flexcoin.com</a>. The information on their website is telling&hellip;</p>
-
-<blockquote><p><strong>Flexcoin is shutting down.</strong> On March 2nd 2014 Flexcoin was attacked and robbed of all coins in the hot wallet. The attacker made off with 896 BTC&hellip; As Flexcoin does not have the resources, assets, or otherwise to come back from this loss, we are closing our doors immediately.</p></blockquote>
-
-<p>The &lsquo;bank&rsquo;, existing to provide security and financial services to bitcoin users, ended up doing exactly the opposite and there&rsquo;s nothing that can be done about it; Bitcoin is not regarded as a currency by government and regulatory organisations, and so bitcoin exchanges and banks go unregulated too. Flexcoin is not alone; <a href="http://lyle.smu.edu/~tylerm/fc13.pdf">nearly 50% of all bitcoin exchanges have failed</a>. Look at the <a href="http://www.flexcoin.com/41.html">legal notice on their information page</a>:</p>
-
-<blockquote><p><strong>Legal Notice:</strong> We are not a true bank that accepts USD or any national currency, only bitcoins which by their nature are not regulated, we’re not FDIC insured or regulated by any government entity.</p></blockquote>
-
-<p>With proper regulation on bitcoin banks and exchanges, flexcoin.com might not have been allowed to exist as it did, and maybe some people would have saved their money. It&rsquo;s important to remember here that regulation is <em>for the banks, not the currency</em>, and at least in the ideal case, its purpose is to avoid catastrophes like flexcoin and MtGox.</p>
-
-<p>Bitcoin banks may in theory be able to provide the same services as conventional banks, but current attempts have widely failed, especially when it comes to security. This is a product of the decentralised and unregulated nature of bitcoin, so time will tell if innovative companies can provide sufficient services to make bitcoin as usable. But the hurdles of regulation and security have yet to be passed.</p>
 ]]></content>
   </entry>
   

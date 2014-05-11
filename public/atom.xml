@@ -4,7 +4,7 @@
   <title><![CDATA[georgepowell.info]]></title>
   <link href="http://georgepowell.info/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-05-08T16:17:44+01:00</updated>
+  <updated>2014-05-11T14:12:13+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Science, Morality and Politics]]></title>
+    <link href="http://georgepowell.info/writing/science-morality-and-politics/"/>
+    <updated>2014-05-11T10:59:34+01:00</updated>
+    <id>http://georgepowell.info/writing/science-morality-and-politics</id>
+    <content type="html"><![CDATA[<p>There&rsquo;s a philosophical position that goes something like this:</p>
+
+<blockquote><p>A statement that has no <em>predictive</em> power, and therefore cannot be shown to be true or false, is meaningless.</p></blockquote>
+
+<p>This is an attractive stance for the scientist who spends his or her life investigating and refining predictive models; it suggests a true objectivity to the world. It narrows the scope of knowledge down to that in which they are an expert. And if there&rsquo;s one undebatable truth in philosophy, it&rsquo;s that there are no undebatable truths in philosophy. And even that&rsquo;s debated.</p>
+
+<p>Philosophical knowledge, by its very nature, is that set of knowledge that cannot be verified by experiment. It can&rsquo;t have predictive power: if it did it would no longer be philosophical. To the hard-line scientist, this is the ultimate shoot-down to philosphy, it makes philosophy meaningless.</p>
+
+<p>But there is a second role of knowledge missing from this view. Even without predictive power, knowledge and beliefs effect our behaviour and decisions. Enter moral philosphy: the world of knowledge that, despite not being verifiable, influences every action we make. Although, to the scientist, subjectivity may be seen as inherently negative, even the most stringent scientist will hold personal ethical beliefs, out of touch from their science. It&rsquo;s the point of the quote that ended my <a href="http://georgepowell.info/../writing/i-for-one-welcome-our-new-insect-overlords/">last post</a>; talking about the inability of science to guide our decisions, Feynman concludes: <em>&ldquo;&hellip; at the end, <strong>you</strong> must have some ultimate judgment.&rdquo;</em></p>
+
+<h2>Moral framework</h2>
+
+<p>A moral framework is a set of beliefs &ndash; held by an individual &ndash; that can be used to ultimately answer all behavioural dilemmas. It fills the gap left by science, and exists as the ultimate end to <em>why</em> we do something the way we do. It adds a connection between our ideas of <em>good</em> and <em>bad</em> and the the real world. To use a moral framework is to take a choice of possible actions, judge their worth according to the criteria withing the framework, and choose the action of the most moral worth. As a computer scientist, it is analagous to a <a href="http://en.wikipedia.org/wiki/State_space_search">state-space search</a> or the <a href="http://en.wikipedia.org/wiki/Minimax">mini-max algorithm</a> &ndash; both exist to make decisions in a simulated world based purely on some external measure of &ldquo;success&rdquo;.</p>
+
+<p>Although moral frameworks are subjective, most of us share some intuitive, ambigious ideas of right and wrong. It&rsquo;s wrong to hurt someone. It&rsquo;s wrong to take away someone&rsquo;s freedom. Our actions may be judged by their consequences to people&rsquo;s happiness. Our actions may also be judged on our <em>intent</em>. Some actions can be wrong <em>in principle</em>, regardless of circumstance. These views can all be true to different extents for different people. And people struggle internally with how to bind them together into a single unambiguous moral framework. It&rsquo;s possible to try and reason and justify these views, but being within the realm of philosphical knowledge, it often results in unresolvable ideological food-fights.</p>
+
+<h2>Where does science come in?</h2>
+
+<p>It&rsquo;s established that science alone cannot derive an objective moral framework or ideology. It&rsquo;s the ultimate reason that political debate often seems so futile and endless. It creates a frustration amongst scientists, so used to seeking objectivity in their field, that they call for scientific principles to be introduced into policy making &ndash; with the hope of ending this ongoing political shouting in favour of evidence based policy. But if our ideologies are personally chosen, what is the role of science in policy making?</p>
+
+<p>A policy is not the same as an ideology. A policy is a set of real-world rules, that have real-world consequences <em>hopefully</em> aligning with the ideology of the policy-creator. Say the politician in charge is a libertarian: he believes the worth of a policy should be judged by its effects in enabling <strong>individual freedom. </strong>The policy gives people freedom? <strong>GOOD.</strong> The policy takes away people&rsquo;s freedom? <strong>BAD.</strong> The politician justifies his no-taxes, no-regulation economic policies with his ideology:</p>
+
+<blockquote><p>Taxes and regulation take away the freedom of individuals to trade with each other as they both see fit. Taking away money and enforcing our own rules on other people&rsquo;s personal trades is <em>wrong</em> because they should have the freedom to trade with each other as they want, so long as the trade doesn&rsquo;t take away the rights of others.</p></blockquote>
+
+<p>On its surface, it may look like this policy is only debatable on ideological grounds. But look deeper and we can see how this policy actually has two parts: The ideology is to promote freedom to individuals, the claim is that reducing taxes and regulation <em>will result</em> in satisfying these ends.</p>
+
+<p>Say the policy is implemented. People are free to trade as they see fit within the lenient restraints of the new &lsquo;libertarian&rsquo; society. Say, over time the economy grows and large companies are allowed to form and merge. It turns out, in this society, that it is in the large companies&#8217; profit interests to fix prices and create repressive monopolies &ndash; harvesting all wealth from the less well off and restricting their employment options so, given a <em>free</em> choice under the law, they <em>have</em> to choose to work for the monopolistic companies. It&rsquo;s the only option to survive. Would the libertarian politician &ndash; who values social mobility and individual freedoms &ndash; consider this society &lsquo;free&rsquo;? If he&rsquo;d have known that the long term consequences of his policies would be that the 99% do not have a practical choice over their lifestyle or employment?</p>
+
+<p>It&rsquo;s a hypothetical story, the point is not about economics, and it is especially not a criticism aimed at the libertarianism ideology. Instead, the story illustrates that an acceptable justification of a policy should rest on more than just an ideology. The failure of the above policy in achieving its ideological aims was not a fault of the ideology itself, it was the fault of the politician&rsquo;s nieve understanding of the policy&rsquo;s consequences.</p>
+
+<h2>Evidence based policy</h2>
+
+<p>When scientists like me call for science based policy, we should call only for the <em>consequences</em> of policies to be investigated scientifically, not their ideological foundations. The nievity of politicians regarding the consequences of their own policies is solvable by science, and it is here that sciece based policy should flourish. Ignorance about the limitations of science, which politicians may be more aware of than the scientist, unecessarily weaken the otherwise valid and important efforts of the scientists in improving the quality of our policies. Science should have its place in politics, but misunderstandings and confusions about the roles of science and ideology need to be tackled before the scientific method can be fully taken advantage of within politics.</p>
+
+<!--
+ - Defense of philosophy
+ - Subjectivity of philosophy
+ - Definition of morality and moral framework
+ - Example of using science and libertarianism to justify economic policy scientifically
+ - Conclusion: current debate around science's place in politics needs to understand it's limitations.
+ -->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I, for one, welcome our new insect overlords]]></title>
