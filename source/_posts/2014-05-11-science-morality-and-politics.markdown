@@ -3,7 +3,7 @@ layout: post
 title: "Science, Morality and Politics"
 date: 2014-05-11 10:59:34 +0100
 comments: true
-categories: blog science morality politics economics
+categories: blog science philosophy politics economics
 ---
 
 There's a philosophical position that goes something like this:
@@ -24,7 +24,7 @@ Although moral frameworks are subjective, most of us share some intuitive, ambig
 
 ## Where does science come in?
 
-It's established that science alone cannot derive an objective moral framework or ideology. It's the ultimate reason that political debate often seems so futile and endless. It creates a frustration amongst scientists, so used to seeking objectivity in their field, that they call for scientific principles to be introduced into policy making - with the hope of ending this ongoing political shouting in favour of evidence based policy. But if our ideologies are personally chosen, what is the role of science in policy making?
+It's established that science alone cannot derive an objective moral framework or ideology. It's the ultimate reason that political debate often seems so futile and endless. It creates a frustration amongst scientists, so used to seeking objectivity in their field, that they call for scientific principles to be introduced into policy making - with the hope of ending this ongoing political shouting in favour of evidence based policy. **But if our ideologies are personally chosen, what is the role of science in policy making?**
 
 A policy is not the same as an ideology. A policy is a set of real-world rules, that have real-world consequences *hopefully* pushing society closer to the ideals of the policy-creator. Say the politician in charge is a libertarian: he believes the worth of a policy should be judged by its effects in enabling **individual freedom. **The policy gives people freedom? **GOOD.** The policy takes away people's freedom? **BAD.** The politician justifies his no-taxes, no-regulation economic policies with his ideology:
 
@@ -34,7 +34,7 @@ On its surface, it may look like this policy is only debatable on ideological gr
 
 Say the policy is implemented. People are free to trade as they see fit within the lenient restraints of the new 'libertarian' society. Say, over time the economy grows and large companies are allowed to form and merge. It turns out, in this society, that it is in the large companies' profit interests to fix prices and create repressive monopolies - harvesting all wealth from the less well off and restricting their employment options so, given a *free* choice under the law, citizens *have* to choose to work for the monopolistic companies. It's the only option to survive. Would the libertarian politician - who values social mobility and individual freedoms - consider this society 'free'? If he'd have known that the long term consequences of his policies would be that the 99% do not have a practical choice over their lifestyle or employment?
 
-It's a hypothetical story, the point is not about economics, and it is especially not a criticism aimed at the libertarian ideology. Instead, the story illustrates that an acceptable justification of a policy rests on more than just an ideology. It should rest on evidence that the policy's consequences work towards the ideology. The failure of the above policy in achieving its ideological aims was not a fault of the ideology itself, it was the fault of the politician's nieve understanding of the policy's consequences.
+It's a hypothetical story, the point is not about economics, and it is especially not a criticism aimed at the libertarian ideology. Instead, the story illustrates that an acceptable justification of a policy rests on more than just an ideology. It should rest on evidence that the *policy's consequences work towards the ideology.* The failure of the above policy in achieving its ideological aims was not a fault of the ideology itself, it was the fault of the politician's naive understanding of the policy's consequences.
 
 ## Evidence based policy
 
