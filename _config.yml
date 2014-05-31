@@ -21,8 +21,6 @@ subscribe_email:
 # RSS feeds can list your email address if you like
 email: georgepowell_1@hotmail.co.uk
 
-
-
 navigation:
 - text: Home
   url: /
