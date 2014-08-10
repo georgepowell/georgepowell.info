@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-06-02T12:08:12+01:00</updated>
+  <updated>2014-08-10T18:43:36+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Numerical Methods and the Green Brain Project]]></title>
+    <link href="http://georgepowell.info/writing/numerical-methods-and-the-green-brain-project/"/>
+    <updated>2014-08-10T10:23:02+01:00</updated>
+    <id>http://georgepowell.info/writing/numerical-methods-and-the-green-brain-project</id>
+    <content type="html"><![CDATA[<p><a href="/writing/i-for-one-welcome-our-new-insect-overlords/">I posted about the Green Brain Project</a> a while ago before starting my placement there. Last week I finished, after spending 6 weeks working with the team investigating ways to improve their numerical simulation methods. For the interested I&rsquo;ll summarise the work I&rsquo;ve done. The full report <a href="/docs/improving-simulation-methods.pdf">can be found here</a>.</p>
+
+<h2>The Spine-Creator tool</h2>
+
+<p>Spine-creator is a tool for building and simulating biological neural networks, built by <a href="http://www.alexcope.co.uk/">Alex Cope</a> of the Green Brain Project. It&rsquo;s designed to be powerful, flexible and usable by non-programmers, with a graphical user interface to visualise and build the networks. &lsquo;Components&rsquo; can be designed and connected together with other components, and the system can be compiled and simulated from within the program. The tool is open source and can be <a href="https://github.com/SpineML/SpineML_2_BRAHMS">found on GitHub here</a>.</p>
+
+<p><img src="/images/spine-creator.png" width="700" alt="Spine-Creator visual interface" /></p>
+
+<p><em>The Spine-Creator visual interface</em></p>
+
+<p>The behaviour of components are usually specified with systems of <a href="http://en.wikipedia.org/wiki/Ordinary_differential_equation">Ordinary Differential Equations (ODEs)</a>: mathematical systems that start at a given state and progress through time acording to the differential equations. For neuron models, there would typically be variables and equations describing how voltages, resistances and chemical concetrations change over time from initial conditions.</p>
+
+<p>Simulating these systems therefore requires <em>solving</em> these sets of equations, which usually isn&rsquo;t possible with the normal algebraic methods taught in school. Instead <a href="http://en.wikipedia.org/wiki/Numerical_methods_for_ordinary_differential_equations">numerical methods</a> are used, these are methods that calculate accurate estimates of how the system will behave, and are usually parameterised to give simulations of any desired accuracy.</p>
+
+<h2>Forward Euler</h2>
+
+<p>Forward Euler is the simplest and most common numerical method for solving ODEs, it is based on the definition of the differential, and can be written in a line or two of code (C#):</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="p">&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="c1">// Takes the value of a variable (initial) along with the rate-of-chage at that point (differential),</span>
+</span><span class='line'><span class="c1">// returns an estimate of the value of the variable after a time-period (dt).</span>
+</span><span class='line'><span class="kt">double</span> <span class="nf">forwardEuler</span><span class="p">(</span><span class="kt">double</span> <span class="n">initial</span><span class="p">,</span> <span class="kt">double</span> <span class="n">differential</span><span class="p">,</span> <span class="kt">double</span> <span class="n">dt</span><span class="p">)</span> <span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">return</span> <span class="n">initial</span> <span class="p">+</span> <span class="n">dt</span> <span class="p">*</span> <span class="n">differential</span><span class="p">;</span>
+</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>You can see that the amount the initial value changes by is proportional to the rate it is changing <em>(differential)</em> and the length of time it is changing for <em>(dt)</em>. This method works, and can achieve any desirable accuracy if iterated over and over again with tiny values for <em>dt</em>. But has a number of <a href="http://en.wikipedia.org/wiki/Numerical_stability">stability problems</a> when simulating particular systems. For example if Forward Euler is used to solve a Sine-Cosine system&hellip;</p>
+
+<p><img src="/images/forward-euler.png" width="500" alt="Sin-Cosine System" /></p>
+
+<p>The result wildly and exponentially oscilates rather than stably moving between +/&ndash; 1.0. The Spine-Creator tool used the Forward Euler method, and this problem (along with others) was the motivation for the research project.</p>
+
+<h2>Runge Kutta methods</h2>
+
+<p>The main class of methods we investigated are called <a href="http://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods">Runge-Kutta methods</a>. They work by calculating the differential at multiple points between the intitial time and <em>dt</em>, and calculating an estimate of the state at the <em>end</em> of the time-step using a linear combination of those differentials. There are a number of algorithms in this class, the most popular being <strong>modified Euler</strong> and <strong>Runge-Kutta 4th Order</strong>. These methods provide more accurate, efficient and stable solutions and can be used with much larger values for <em>dt</em>.</p>
+
+<h2>Adaptive time-step methods</h2>
+
+<p>The methods described so far assume a value for <em>dt</em> has already been chosen. Adaptive time-step methods work by providing an estimate for the <em>error</em> introduced during a time period, and using that error estimate to suggest a new value for <em>dt</em> based on a given <em>error-tolerance</em>. These methods can, for example, use a very small <em>dt</em> during chaotic and difficult time-periods, and shift later to using a much larger <em>dt</em> when the system stablises. The adaptive time-step method I investigated and implemented is called the <a href="http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince Method</a>. It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:</p>
+
+<p><img src="/images/adaptive-step.png" width="500" alt="Sin-Cosine System" /></p>
+
+<p>Visually, the dots get further apart as the system progresses and becomes more linear.</p>
+
+<h2>Parallelisation and Synaptic Delays</h2>
+
+<p>Part of the project&rsquo;s aims are to simulate the systems in paralell on GPUs. The bottleneck to doing this as it stands is to do with the large degree of connectivity within the network; sharing data between otherwise unconnected sub-systems prohibits simulating them in isolation, as their behaviour will always depend on other neurons from another part of the network. <a href="http://material.brainworks.uni-freiburg.de/publications-brainworks/2007/journal%20papers/Morrison-neco-07_47.pdf">We found a paper</a> that describes a method for isolating subsystems for a maximum period of time, which restricts data-flow between components based on the <em>synaptic delays</em> in the network. Using this method could potentially aid the paralellisation of the simulation.</p>
+
+<h2>Awesome!</h2>
+
+<p>So overall it was a super cool project and I learnt a lot. It&rsquo;s great to get back into mathsy-programming with an enthusiastic acedemic team. A big shoutout to the <a href="http://greenbrain.group.shef.ac.uk/">Green Brain Project</a> and the <a href="http://www.shef.ac.uk/sure">SURE scheme</a> for enabling this project and others for other students, I&rsquo;m looking forward to working with the team again in my 3rd year at the University.</p>
+
+<h2>Code and full report</h2>
+
+<ul>
+<li><p>The methods mentioned were implemented in an isolated C++ program <a href="https://github.com/georgepowell/numerical-methods">available on GitHub</a>.</p></li>
+<li><p>The full report which was handed in at the end of the placement <a href="/docs/improving-simulation-methods.pdf">is available here (pdf)</a>. This includes tons of details and extras that aren&rsquo;t mentioned in this blog post.</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Science, Morality and Politics]]></title>
@@ -210,33 +295,6 @@
 <p> Bitcoin is digital gold: there is a finite supply. Cash is subject to continuous steady inflation: its value will always be gradually decreasing. So assuming the novelty of spending bitcoin has worn off in this future, it would make sense to keep your value-preserving-bitcoin and get rid of your cash. This is one reason why economists critisise the deflationary (or at least zero-inflation) nature of bitcoin.</p>
 
 <p> The reality is complex, however, and this property doesn&rsquo;t necessarily detract from its other advantages. But this is one reason for believing that even if bitcoin is successful, it won&rsquo;t <em>replace</em> other currencies too easily.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Big Pharma - Book review]]></title>
-    <link href="http://georgepowell.info/writing/big-pharma-book-review/"/>
-    <updated>2014-04-09T10:28:57+01:00</updated>
-    <id>http://georgepowell.info/writing/big-pharma-book-review</id>
-    <content type="html"><![CDATA[<p><img src="http://sciencebasedpharmacy.files.wordpress.com/2012/11/bad-pharma.png" alt="Bad Pharma book cover" /></p>
-
-<p>We take pride in our western medicine. We believe it is evidence based, objective, and working with the correct incentives. Instead, Ben Goldacre writes: <em>(p238)</em></p>
-
-<blockquote><p>&hellip; We have occasional, small brief trials, in unrepresentative populations, testing irrelevant comparisons, measuring irrelevant outcomes, with whole trials that go missing, avoidable design flaws, and endless reporting biases that only persist because research is conducted chaotically, for commercial gain, in spuriously expensive trials. The poor-quality evidence created by this system harms patients around the world.  <strong>And if we wanted, we could fix it.</strong></p></blockquote>
-
-<p>This is a powerful book, with a clear and unforgiving message: Western medicine is not as scientific as we are told; the system is corrupt and industries work with their own profits in mind.</p>
-
-<h3>Bad Science</h3>
-
-<p>Goldacre is known for his blog &ndash; <a href="http://www.badscience.net/">Bad Science</a>, where he debunks claims ranging from the <a href="http://www.theguardian.com/science/2007/nov/16/sciencenews.g2">proficiency of homeopathy</a> to the popular <a href="http://www.badscience.net/2007/02/ms-gillian-mckeith-banned-from-calling-herself-a-doctor/">nutrician supplements of &ldquo;Dr&rdquo; Gillian Mckieth</a>. He turns his attention here to the more serious mispractices going on in western medicine as a whole.</p>
-
-<p>It is a long book, covering over 350 pages excluding notes, illustrating his points with shocking stories and backing them up with hard evidence where possible. He covers many topics, ranging from the widely unsolved positive publication bias in academic journals, to &lsquo;regulatory capture&rsquo;: how pharmacutical companies become their own regulators. The book ends with an unforgiving tour-de-force breakdown of how marketting is used to decieve doctors and patients.</p>
-
-<p>Goldacre knows this isn&rsquo;t an academic paper, and he communicates to his readers early on that it shouldn&rsquo;t be treated as one. However the result is a book that treads a confusing line between sensationalist popular science and a seminal analysis of a very serious problem. The points in this book, however, need to be treated with respect by the people in power, even though it is aimed at the general public.</p>
-
-<p>I really enjoyed and learnt a lot from this book, and I&rsquo;d recommend it especially to those involved in medicine &ndash; who will be in a better position than I am to comment on the problems raised here, and maybe do something about them.</p>
-
-<p><a href="http://www.amazon.co.uk/Bad-Pharma-How-Medicine-Broken/dp/000749808X">Buy Ben Goldacre&rsquo;s Bad Pharma on Amazon.co.uk</a></p>
 ]]></content>
   </entry>
   

@@ -29,23 +29,27 @@ I'm happy to be contacted for software development positions. Feel free to [drop
 
  - **Communicating, writing, and public speaking**
 
-   Communicating and discussing ideas is as important as the ideas themselves. I enjoy writing and explaining things, and am confident with public speaking.
+   Communicating and discussing ideas is as important as the ideas themselves. I enjoy technical writing and explaining things, and am confident with public speaking.
 
 ## Work
-<!--
- - #### **Neural network research internship at the [Green Brain Project](http://greenbrain.group.shef.ac.uk/)**
 
-   6 week paid research internship implementing automated analytic solution methods for complex neural networks. Implemented algorithms that inspected the network topology and automatically solved them in the most efficient way, often resulting in orders of magnitude in efficiency gains from the default iterative solution methods.
--->
- - #### **Android developer at [Existor](http://www.existor.com/)**
+ - #### **C# ASP.NET MVC developer at [Publish Interactive](http://www.publishinteractive.com/)** (2014)
+
+   8 weeks of contract work in the innovations team building a search tool for market research analysts. Built app from scratch including front and back end using HTML5, ASP.NET MVC 5 and Web API 2. Was encouraged to use modern web development techniques and libraries like SignalR, Angular JS and JQuery. Involved researching the OAuth 2.0 protocol and implementing an Authorization Server to allow apps to use our APIs securely.
+
+ - #### **Research placement at the [Green Brain Project](http://greenbrain.group.shef.ac.uk/)** (2014)
+
+   6 week research placement implementing numerical solution methods for biological neuron models. Implemented a range of numerical integration methods and compared their efficiency at simulating various biological systems. Wrote a [comprehensive report](/docs/improving-simulation-methods.pdf) for the team to base further improvements on. Worked with C++ and XSLT. Wrote about it [here](/writing/i-for-one-welcome-our-new-insect-overlords/) and [here](/writing/numerical-methods-and-the-green-brain-project/).
+
+ - #### **Android developer at [Existor](http://www.existor.com/)** (2013-14)
    
    Responsible for developing Android applications, including [Cleverbot Android (50,000+ installs)](https://play.google.com/store/apps/details?id=com.icogno.cleverbot), [CleverTweet (3,000+ installs)](https://play.google.com/store/apps/details?id=com.existor.Clevertweeter) and the [Clevermessage SMS auto responder (2,000+ installs)](https://play.google.com/store/apps/details?id=com.existor.clevermessageapp). I took part in technical discussions regarding the core artificial intelligence techniques, and completed independent research into possible new approaches to incorporating hierachical pattern recognition methods into cleverbot's natural language understanding ([demo of early work on github](https://github.com/georgepowell/markov_chain_visualisation)).
  
- - #### **ASP.NET MVC back-end developer for [foundbite.co](http://foundbite.co) at [Mendzapp](http://mendzapp.com/)**
+ - #### **C# ASP.NET MVC back-end developer for [foundbite.co](http://foundbite.co) at [Mendzapp](http://mendzapp.com/)** (2013)
    
    Mendzapp is a software development company started by [James Mundy](http://about.me/JamesMundy). We built foundbite together over the course of a year, with a succesfull funding grant from [AppCampus](http://www.appcampus.fi). I left to continue university and James continues to work building foundbite. Foundbite has recieved an extremely positive reaction with [hundreds of reviews averaging 4.5+ stars](http://www.windowsphone.com/en-us/store/app/foundbite/243343f7-36e4-454d-8bbd-b15d447037ab) with Android and iOS versions on the way.
  
- - #### **C# Silverlight developer at [Datong](http://www.datong.co.uk/)**
+ - #### **C# Silverlight developer at [Datong](http://www.datong.co.uk/)** (2011-12)
    
    Worked with an experienced team of senior developers adding features to a mature covert tracking application. Gained invaluable experience developing large scale C# applications.
 
