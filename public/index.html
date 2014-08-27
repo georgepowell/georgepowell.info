@@ -126,6 +126,148 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2014-08-27T23:04:57+01:00" pubdate data-updated="true">Aug 27<span>th</span>, 2014</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://georgepowell.info/writing/lambda-functions-in-vanilla-javascript/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10 post-container">
+      <h1 class="link"><a href="/writing/lambda-functions-in-vanilla-javascript/">C# Lambda functions in vanilla javascript</a></h1>
+      <p>Introducing <a href="/docs/z.js">z.js</a> &ndash; a javascript function (under 1kb) that allows you to use C# style lambda statements from vanilla javascript.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">Z</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">lambda</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">parts</span> <span class="o">=</span> <span class="nx">lambda</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; =&gt; &quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">inputs</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">code</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">$$</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">expression</span> <span class="o">=</span> <span class="nx">code</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">inputs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">$$</span><span class="p">[</span><span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span><span class='line'>          <span class="nx">expression</span> <span class="o">=</span> <span class="nx">expression</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;$$[&#39;&quot;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;]&quot;</span><span class="p">);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Usage</h2>
+
+<p>This kind of syntax is best used with functional-type programming with methods like <em>map</em> and <em>where</em>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Z</span><span class="p">(</span><span class="s2">&quot;a b c =&gt; a + b + c&quot;</span><span class="p">)(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span> <span class="c1">// 6</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// maps a list from one form to another using a &#39;processor&#39; function</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">processor</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">rtn</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">rtn</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">processor</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">rtn</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// filters a list based on a predicate function</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">where</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">predicate</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">rtn</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">predicate</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">]))</span>
+</span><span class='line'>          <span class="nx">rtn</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">rtn</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">map</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="nx">Z</span><span class="p">(</span><span class="s2">&quot;a =&gt; a * a * a&quot;</span><span class="p">)));</span> <span class="c1">// [64, 125, 216, 8, 27, 64, 64, 8] </span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">map</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="nx">Z</span><span class="p">(</span><span class="s2">&quot;a =&gt; a % 2 === 0&quot;</span><span class="p">)));</span> <span class="c1">// [false, true, false, true, false, true, false, true, false]</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">map</span><span class="p">(</span><span class="nx">where</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="nx">Z</span><span class="p">(</span><span class="s2">&quot;a =&gt; a % 2 === 0&quot;</span><span class="p">)),</span> <span class="nx">Z</span><span class="p">(</span><span class="s2">&quot;a =&gt; a + &#39; is even&#39;&quot;</span><span class="p">)));</span> <span class="c1">// [&quot;2 is even&quot;, &quot;4 is even&quot;, &quot;6 is even&quot;, &quot;8 is even&quot;] </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Warning</h2>
+
+<p>This is untested and potentially dangerous, or at its very best inefficient. Use with caution!</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2 post-meta">
+	  <h5 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2014-08-10T10:23:02+01:00" pubdate data-updated="true">Aug 10<span>th</span>, 2014</time></h5>
           <div class="row-fluid">
           
@@ -191,7 +333,7 @@
 
 <h2>Adaptive time-step methods</h2>
 
-<p>The methods described so far assume a value for <em>dt</em> has already been chosen. Adaptive time-step methods work by providing an estimate for the <em>error</em> introduced during a time period, and using that error estimate to suggest a new value for <em>dt</em> based on a given <em>error-tolerance</em>. These methods can, for example, use a very small <em>dt</em> during chaotic and difficult time-periods, and shift later to using a much larger <em>dt</em> when the system stablises. The adaptive time-step method I investigated and implemented is called the <a href="http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince Method</a>. It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:</p>
+<p>The methods described so far assume a value for <em>dt</em> has already been chosen. Adaptive time-step methods work by providing an estimate for the <em>error</em> introduced during a time period, and using that error estimate to suggest a new value for <em>dt</em> based on a given <em>error-tolerance</em>. These methods can, for example, use a very small <em>dt</em> during chaotic and difficult time-periods, and shift later to using a much larger <em>dt</em> when the system stabilises. The adaptive time-step method I investigated and implemented is called the <a href="http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince Method</a>. It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:</p>
 
 <p><img src="/images/adaptive-step.png" width="500" alt="Sin-Cosine System" /></p>
 

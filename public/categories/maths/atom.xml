@@ -4,7 +4,7 @@
   <title><![CDATA[Category: maths | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/maths/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-08-10T18:43:36+01:00</updated>
+  <updated>2014-08-28T00:01:18+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -74,7 +74,7 @@
 
 <h2>Adaptive time-step methods</h2>
 
-<p>The methods described so far assume a value for <em>dt</em> has already been chosen. Adaptive time-step methods work by providing an estimate for the <em>error</em> introduced during a time period, and using that error estimate to suggest a new value for <em>dt</em> based on a given <em>error-tolerance</em>. These methods can, for example, use a very small <em>dt</em> during chaotic and difficult time-periods, and shift later to using a much larger <em>dt</em> when the system stablises. The adaptive time-step method I investigated and implemented is called the <a href="http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince Method</a>. It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:</p>
+<p>The methods described so far assume a value for <em>dt</em> has already been chosen. Adaptive time-step methods work by providing an estimate for the <em>error</em> introduced during a time period, and using that error estimate to suggest a new value for <em>dt</em> based on a given <em>error-tolerance</em>. These methods can, for example, use a very small <em>dt</em> during chaotic and difficult time-periods, and shift later to using a much larger <em>dt</em> when the system stabilises. The adaptive time-step method I investigated and implemented is called the <a href="http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince Method</a>. It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:</p>
 
 <p><img src="/images/adaptive-step.png" width="500" alt="Sin-Cosine System" /></p>
 

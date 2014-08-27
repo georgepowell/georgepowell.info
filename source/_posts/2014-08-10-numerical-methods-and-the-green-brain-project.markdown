@@ -47,7 +47,7 @@ The main class of methods we investigated are called [Runge-Kutta methods](http:
 
 ## Adaptive time-step methods
 
-The methods described so far assume a value for *dt* has already been chosen. Adaptive time-step methods work by providing an estimate for the *error* introduced during a time period, and using that error estimate to suggest a new value for *dt* based on a given *error-tolerance*. These methods can, for example, use a very small *dt* during chaotic and difficult time-periods, and shift later to using a much larger *dt* when the system stablises. The adaptive time-step method I investigated and implemented is called the [Dormand-Prince Method](http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method). It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:
+The methods described so far assume a value for *dt* has already been chosen. Adaptive time-step methods work by providing an estimate for the *error* introduced during a time period, and using that error estimate to suggest a new value for *dt* based on a given *error-tolerance*. These methods can, for example, use a very small *dt* during chaotic and difficult time-periods, and shift later to using a much larger *dt* when the system stabilises. The adaptive time-step method I investigated and implemented is called the [Dormand-Prince Method](http://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method). It can result in very efficient and very accurate solutions compared to similar fixed-time-step methods. Run on a single variable system (see the full report and code for details) the result clearly shows a changing time-step:
 
 ![Sin-Cosine System](/images/adaptive-step.png =500x)
 
@@ -64,6 +64,6 @@ So overall it was a super cool project and I learnt a lot. It's great to get bac
 ## Code and full report
 
  - The methods mentioned were implemented in an isolated C++ program [available on GitHub](https://github.com/georgepowell/numerical-methods).
- 
+
  - The full report which was handed in at the end of the placement [is available here (pdf)](/docs/improving-simulation-methods.pdf). This includes tons of details and extras that aren't mentioned in this blog post.
 
