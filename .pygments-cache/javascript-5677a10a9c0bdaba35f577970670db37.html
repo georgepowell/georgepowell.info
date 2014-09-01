@@ -1,0 +1,33 @@
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">lambda</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">lambda</span> <span class="o">==</span> <span class="s1">&#39;string&#39;</span> <span class="o">||</span> <span class="nx">lambda</span> <span class="k">instanceof</span> <span class="nb">String</span><span class="p">))</span>
+		<span class="k">return</span> <span class="nx">lambda</span><span class="p">;</span> <span class="c1">// if Z() is passed a function, it is returned unmodified</span>
+
+	<span class="kd">var</span> <span class="nx">parts</span> <span class="o">=</span> <span class="nx">lambda</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; =&gt; &quot;</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">inputs</span><span class="p">;</span>
+	<span class="kd">var</span> <span class="nx">code</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">parts</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="nx">inputs</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+		<span class="nx">code</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+	<span class="p">}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+		<span class="nx">inputs</span> <span class="o">=</span> <span class="s2">&quot;abcdef&quot;</span><span class="p">;</span> <span class="c1">// Implicit parameter names a-f</span>
+		<span class="nx">code</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+	<span class="p">}</span>
+
+	<span class="nx">code</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">code</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+
+	<span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">$$</span> <span class="o">=</span> <span class="p">[];</span>
+		<span class="kd">var</span> <span class="nx">expression</span> <span class="o">=</span> <span class="nx">code</span><span class="p">;</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">inputs</span><span class="p">.</span><span class="nx">length</span> <span class="o">||</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">$$</span><span class="p">[</span><span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+			<span class="nx">expression</span> <span class="o">=</span> <span class="nx">expression</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;$$[&#39;&quot;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;]&quot;</span><span class="p">);</span>
+			<span class="nx">expression</span> <span class="o">=</span> <span class="nx">expression</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;($$[&#39;&quot;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;])&quot;</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>

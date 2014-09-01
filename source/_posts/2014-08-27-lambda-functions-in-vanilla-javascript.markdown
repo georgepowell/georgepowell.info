@@ -1,26 +1,46 @@
 ---
 layout: post
-title: "C# Lambda functions in vanilla javascript"
+title: "Ridiculously succinct array manipulation in javascript"
 date: 2014-08-27 23:04:57 +0100
 comments: true
-categories: 
+categories: blog programming javascript
 ---
 
-Introducing [z.js](/docs/z.js) - a javascript function (under 1kb) that allows you to use C# style lambda statements from vanilla javascript.
+Introducing [z.js](/docs/z.js) - a lightweight javascript library that allows you to use a ridiculously succinct syntax for working with javascript arrays, like `[1, 2, 3].map('a * 2').filter('a % 5 == 0');`. They're like lambdas in C# but better.
+
+Here's the code in full:
  
 {% codeblock lang:javascript %}
 
-var Z = function (lambda) {
+// z() takes a string-lambda and returns a function representing that lambda
+var z = function (lambda) {
+	if (!(typeof lambda == 'string' || lambda instanceof String))
+		return lambda; // if Z() is passed a function, it is returned unmodified
+
 	var parts = lambda.split(" => ");
-	var inputs = parts[0].split(" ");
-	var code = parts[1];
+	var inputs;
+	var code;
+
+  if (parts.length === 2)
+	{
+		inputs = parts[0].split(" ");
+		code = parts[1];
+	}
+	else
+	{
+		inputs = "abcdef"; // Implicit parameter names a-f
+		code = parts[0];
+	}
+
+	code = ' ' + code + ' ';
 
 	return function () {
 		var $$ = [];
 		var expression = code;
-		for (var i = 0; i < inputs.length; i++) {
+		for (var i = 0; i < inputs.length || i < arguments.length; i++) {
 			$$[inputs[i]] = arguments[i];
-			expression = expression.split(inputs[i]).join("$$['" + inputs[i] + "']");
+			expression = expression.split(' ' + inputs[i] + ' ').join("$$['" + inputs[i] + "']");
+			expression = expression.split('(' + inputs[i] + ')').join("($$['" + inputs[i] + "'])");
 		}
 		return eval(expression);
 	}
@@ -28,41 +48,59 @@ var Z = function (lambda) {
 
 {% endcodeblock %}
 
-## Usage
-
-This kind of syntax is best used with functional-type programming with methods like *map* and *where*. 
-
+And to make the standard `Array.prototype` methods support the new string-lambdas:
+ 
 {% codeblock lang:javascript %}
 
-console.log(Z("a b c => a + b + c")(1, 2, 3)); // 6
+Array.prototype.forEachF = Array.prototype.forEach;
+Array.prototype.forEach = function (lambda) { return this.forEachF(z(lambda)); }
 
+Array.prototype.everyF = Array.prototype.every;
+Array.prototype.every = function (lambda) { return this.everyF(z(lambda)); }
 
-// maps a list from one form to another using a 'processor' function
-var map = function(list, processor) {
-	var rtn = [];
-	for (var i = 0; i < list.length; i++) {
-		rtn[i] = processor(list[i]);
-	}
-	return rtn;
-}
+Array.prototype.someF = Array.prototype.some;
+Array.prototype.some = function (lambda) { return this.someF(z(lambda)); }
 
-// filters a list based on a predicate function
-var where = function(list, predicate) {
-	var rtn = [];
-	for (var i = 0; i < list.length; i++) {
-		if(predicate(list[i]))
-		    rtn.push(list[i]);
-	}
-	return rtn;
-}
+Array.prototype.filterF = Array.prototype.filter;
+Array.prototype.filter = function (lambda) { return this.filterF(z(lambda)); }
 
+Array.prototype.findF = Array.prototype.find;
+Array.prototype.find = function (lambda) { return this.findF(z(lambda)); }
 
-console.log(map([4, 5, 6, 2, 3, 4, 4, 2], Z("a => a * a * a"))); // [64, 125, 216, 8, 27, 64, 64, 8] 
-console.log(map([1, 2, 3, 4, 5, 6, 7, 8, 9], Z("a => a % 2 === 0"))); // [false, true, false, true, false, true, false, true, false]
-console.log(map(where([1, 2, 3, 4, 5, 6, 7, 8, 9], Z("a => a % 2 === 0")), Z("a => a + ' is even'"))); // ["2 is even", "4 is even", "6 is even", "8 is even"] 
+Array.prototype.findIndexF = Array.prototype.findIndex;
+Array.prototype.findIndex = function (lambda) { return this.findIndexF(z(lambda)); }
+
+Array.prototype.keysF = Array.prototype.keys;
+Array.prototype.keys = function (lambda) { return this.keysF(z(lambda)); }
+
+Array.prototype.mapF = Array.prototype.map;
+Array.prototype.map = function (lambda) { return this.mapF(z(lambda)); }
+
+Array.prototype.reduceF = Array.prototype.reduce;
+Array.prototype.reduce = function (lambda) { return this.reduceF(z(lambda)); }
+
+Array.prototype.reduceRightF = Array.prototype.reduceRight;
+Array.prototype.reduceRight = function (lambda) { return this.reduceRightF(z(lambda)); }
 
 {% endcodeblock %}
 
-## Warning
+## Usage
 
-This is untested and potentially dangerous, or at its very best inefficient. Use with caution!
+This kind of syntax is best used with functional-type programming with methods like *map* and *filter*. 
+
+{% codeblock lang:javascript %}
+
+var numbers  = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// These 3 lines will all do exactly the same thing:
+numbers.map(function (a) { return a * 2; }); // plain old javascript
+numbers.map("a => a * 2"); // explicit variable names
+numbers.map("a * 2"); // implicit variable name of 'a'
+
+numbers.filter('a % 2 == 0').map('a * 2').reduce("a + ', ' + b"); // Which allows for simple, readable, functional array manipulation.
+
+{% endcodeblock %}
+
+## Warning!
+
+This method is sketchy and has been built here as a proof of concept. It's significantly slower than normal javascript anonymous functions and probably has some other serious problems. Enjoy!
