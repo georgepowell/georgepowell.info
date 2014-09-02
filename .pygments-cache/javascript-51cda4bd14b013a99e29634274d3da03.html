@@ -1,0 +1,10 @@
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">numbers</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span>
+
+<span class="c1">// These 3 lines will all do exactly the same thing:</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span> <span class="p">});</span> <span class="c1">// plain old javascript</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s2">&quot;a =&gt; a * 2&quot;</span><span class="p">);</span> <span class="c1">// explicit variable names</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s2">&quot;a * 2&quot;</span><span class="p">);</span> <span class="c1">// implicit variable name of &#39;a&#39;</span>
+
+<span class="c1">// This allows for simple, readable, functional array manipulation.</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;a % 2 == 0&#39;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;a * 2&#39;</span><span class="p">).</span><span class="nx">reduce</span><span class="p">(</span><span class="s2">&quot;a + &#39;, &#39; + b&quot;</span><span class="p">);</span>
+</pre></div>

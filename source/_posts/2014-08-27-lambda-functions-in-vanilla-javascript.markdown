@@ -15,19 +15,17 @@ Here's the code in full:
 // z() takes a string-lambda and returns a function representing that lambda
 var z = function (lambda) {
 	if (!(typeof lambda == 'string' || lambda instanceof String))
-		return lambda; // if Z() is passed a function, it is returned unmodified
+		return lambda; // if z() is passed a function, it is returned unmodified
 
 	var parts = lambda.split(" => ");
 	var inputs;
 	var code;
 
-  if (parts.length === 2)
-	{
+  if (parts.length === 2) {
 		inputs = parts[0].split(" ");
 		code = parts[1];
 	}
-	else
-	{
+	else {
 		inputs = "abcdef"; // Implicit parameter names a-f
 		code = parts[0];
 	}
@@ -39,6 +37,7 @@ var z = function (lambda) {
 		var expression = code;
 		for (var i = 0; i < inputs.length || i < arguments.length; i++) {
 			$$[inputs[i]] = arguments[i];
+			// Only finds variables enclosed by spaces or brackets... TODO: proper finding and replacing of variable names.
 			expression = expression.split(' ' + inputs[i] + ' ').join("$$['" + inputs[i] + "']");
 			expression = expression.split('(' + inputs[i] + ')').join("($$['" + inputs[i] + "'])");
 		}
@@ -97,10 +96,11 @@ numbers.map(function (a) { return a * 2; }); // plain old javascript
 numbers.map("a => a * 2"); // explicit variable names
 numbers.map("a * 2"); // implicit variable name of 'a'
 
-numbers.filter('a % 2 == 0').map('a * 2').reduce("a + ', ' + b"); // Which allows for simple, readable, functional array manipulation.
+// This allows for simple, readable, functional array manipulation.
+numbers.filter('a % 2 == 0').map('a * 2').reduce("a + ', ' + b");
 
 {% endcodeblock %}
 
-## Warning!
+## Caution!
 
-This method is sketchy and has been built here as a proof of concept. It's significantly slower than normal javascript anonymous functions and probably has some other serious problems. Enjoy!
+This method is sketchy and has been built here as a proof of concept. It's significantly slower than normal javascript anonymous functions and has plenty of other serious problems. Enjoy!

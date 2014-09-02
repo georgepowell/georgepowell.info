@@ -35,7 +35,7 @@ I'm happy to be contacted for software development positions. Feel free to [drop
 
  - #### **C# ASP.NET MVC developer at [Publish Interactive](http://www.publishinteractive.com/)** (2014)
 
-   8 weeks of contract work in the innovations team building a search tool for market research analysts. Built app from scratch including front and back end using HTML5, ASP.NET MVC 5 and Web API 2. Was encouraged to use modern web development techniques and libraries like SignalR, Angular JS and JQuery. Involved researching the OAuth 2.0 protocol and implementing an Authorization Server to allow apps to use our APIs securely.
+   8 weeks of contract work in the innovations team building a search tool for market research analysts. Built app from scratch including front and back end using HTML5, ASP.NET MVC 5 and Web API 2. Used modern web development techniques and libraries like SignalR, Angular JS and JQuery. Researched the OAuth 2.0 protocol and implemented an Authorization Server to allow apps to use our APIs securely. Researched Lucene, Solr and ElasticSearch to provide fast distributed natural language search over thousands of documents.
 
  - #### **Research placement at the [Green Brain Project](http://greenbrain.group.shef.ac.uk/)** (2014)
 
@@ -57,7 +57,7 @@ I'm happy to be contacted for software development positions. Feel free to [drop
 
  - #### University
 
-   Masters of Computer Science with Year in Industry (5 years) - University of Sheffield. Graduating 2016.
+   Computer Science Master's degree with Year in Industry (5 years) - University of Sheffield. Graduating 2016.
 
  - #### **A Levels**
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-09-01T22:28:05+01:00</updated>
+  <updated>2014-09-02T22:04:51+01:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -63,28 +63,25 @@
 <span class='line-number'>39</span>
 <span class='line-number'>40</span>
 <span class='line-number'>41</span>
-<span class='line-number'>42</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// z() takes a string-lambda and returns a function representing that lambda</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">lambda</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">lambda</span> <span class="o">==</span> <span class="s1">&#39;string&#39;</span> <span class="o">||</span> <span class="nx">lambda</span> <span class="k">instanceof</span> <span class="nb">String</span><span class="p">))</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">lambda</span><span class="p">;</span> <span class="c1">// if Z() is passed a function, it is returned unmodified</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">lambda</span><span class="p">;</span> <span class="c1">// if z() is passed a function, it is returned unmodified</span>
 </span><span class='line'>
 </span><span class='line'><span class="kd">var</span> <span class="nx">parts</span> <span class="o">=</span> <span class="nx">lambda</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; =&amp;gt; &quot;</span><span class="p">);</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">inputs</span><span class="p">;</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">code</span><span class="p">;</span>
 </span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="k">if</span> <span class="p">(</span><span class="nx">parts</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="k">if</span> <span class="p">(</span><span class="nx">parts</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="p">{</span>
-</span><span class='line'>    <span class="nx">inputs</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span>    <span class="nx">inputs</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
 </span><span class='line'>    <span class="nx">code</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
 </span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">else</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">inputs</span> <span class="o">=</span> <span class="s2">&quot;abcdef&quot;</span><span class="p">;</span> <span class="c1">// Implicit parameter names a-f</span>
 </span><span class='line'>    <span class="nx">code</span> <span class="o">=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 </span><span class='line'><span class="p">}</span>
@@ -96,6 +93,7 @@
 </span><span class='line'>    <span class="kd">var</span> <span class="nx">expression</span> <span class="o">=</span> <span class="nx">code</span><span class="p">;</span>
 </span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">inputs</span><span class="p">.</span><span class="nx">length</span> <span class="o">||</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>        <span class="nx">$$</span><span class="p">[</span><span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span><span class='line'>        <span class="c1">// Only finds variables enclosed by spaces or brackets... TODO: proper finding and replacing of variable names.</span>
 </span><span class='line'>        <span class="nx">expression</span> <span class="o">=</span> <span class="nx">expression</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;$$[&#39;&quot;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;]&quot;</span><span class="p">);</span>
 </span><span class='line'>        <span class="nx">expression</span> <span class="o">=</span> <span class="nx">expression</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;($$[&#39;&quot;</span> <span class="o">+</span> <span class="nx">inputs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;])&quot;</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
@@ -194,6 +192,7 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
+<span class='line-number'>13</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">numbers</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
@@ -203,14 +202,15 @@
 </span><span class='line'><span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span> <span class="c1">// explicit variable names</span>
 </span><span class='line'><span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span> <span class="c1">// implicit variable name of &amp;lsquo;a&amp;rsquo;&lt;/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;).</span><span class="nx">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;).</span><span class="nx">reduce</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">b</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span> <span class="c1">// Which allows for simple, readable, functional array manipulation.&lt;/p&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// This allows for simple, readable, functional array manipulation.</span>
+</span><span class='line'><span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;).</span><span class="nx">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">*</span> <span class="mi">2</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;).</span><span class="nx">reduce</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">a</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">b</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h2>Warning!</h2>
+<h2>Caution!</h2>
 
-<p>This method is sketchy and has been built here as a proof of concept. It&rsquo;s significantly slower than normal javascript anonymous functions and probably has some other serious problems. Enjoy!</p>
+<p>This method is sketchy and has been built here as a proof of concept. It&rsquo;s significantly slower than normal javascript anonymous functions and has plenty of other serious problems. Enjoy!</p>
 ]]></content>
   </entry>
   
