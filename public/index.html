@@ -126,6 +126,89 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2016-02-18T22:43:53+00:00" pubdate data-updated="true">Feb 18<span>th</span>, 2016</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://georgepowell.info/writing/has-apple-really-been-asked-to-write-a-backdoor/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          <a href="/categories/blog/"><span class="badge">blog</span></a>
+          
+          <a href="/categories/security/"><span class="badge">security</span></a>
+          
+          </div>
+          
+    </div>
+    <div class="span10 post-container">
+      <h1 class="link"><a href="/writing/has-apple-really-been-asked-to-write-a-backdoor/">Has Apple really been asked to write a backdoor?</a></h1>
+      <p>Tim Cook <a href="http://www.apple.com/customer-letter/">released a statement today</a> objecting to <a href="https://assets.documentcloud.org/documents/2714005/SB-Shooter-Order-Compelling-Apple-Asst-iPhone.pdf">an FBI court order</a> they recieved related to the San Bernardino shootings. The open letter claims the FBI is asking them to build a backdoor to their iOS operating system:</p>
+
+<blockquote><p>The government suggests this tool could only be used once, on one phone. But that’s simply not true. Once created, the technique could be used over and over again, on any number of devices. In the physical world, it would be the equivalent of a master key, capable of opening hundreds of millions of locks — from restaurants and banks to stores and homes. No reasonable person would find that acceptable.</p></blockquote>
+
+<p>My initial reaction to reading this was confusion. The term &ldquo;backdoor&rdquo; usually refers to a security <em>vulnerability</em> purposefully placed in software, indended to be exploited later by the parties aware of it. So is this suggesting iOS already has a backdoor that the government wants access to? Are apple being asked to <em>build</em> a backdoor into iOS in an update?</p>
+
+<p><a href="https://blog.trailofbits.com/2016/02/17/apple-can-comply-with-the-fbi-court-order/">Neither</a>. The encryption software built into the iPhones in question (5C) appears to be uncrackable by both the FBI and Apple, and the FBI are not suggesting Apple release any new software to the general public. They are only concered with breaking the pin code on a specific device, and the only option available to bypass the security protections on the phone is to install <em>new software</em> on the device which <em>removes those protections completely</em>. And since the phone requires apple to digitally sign this new software, <strong>Apple has to create the software</strong>.</p>
+
+<h2>The software would be a master key</h2>
+
+<p>The point on which I agree with Apple is that this software would certainly be equivalent to an <strong>iPhone 5C master key</strong>. However Apple, by having the ability to sign arbitrary software updates, have <strong>always</strong> had the master key. If it&rsquo;s Apple you wanted to keep the master key from, <strong>well they&rsquo;ve been able to create it all along</strong>.</p>
+
+<p>So how about keeping the master key away from the FBI? That&rsquo;s certainly a valid concern. But the court order specifically suggests that the compromised iPhone and software <em>would never need to leave Apple&rsquo;s headquarters</em>:</p>
+
+<blockquote><p>&hellip; Apple shall provide the government with remote access to the SUBJECT DEVICE through a computer allowing the government to conduct passcode recovery analysis.</p></blockquote>
+
+<h2>It&rsquo;s all about the precedent</h2>
+
+<p>So let&rsquo;s say Apple create the master key. They install it on the device and give the FBI remote access. What&rsquo;s changed?</p>
+
+<p>Firstly, the master key now <em>exists</em>. This is of course not an ideal situation, but it can be kept in the hands of the organisation we already trust, and presumably locked down using similar mechanisms they secure their own private keys with. Due to this, normal iPhone 5C users are not subjected to weakened security. Gaining access to this master key is not as simple as exploiting a backdoor. They would need to infiltrate Apple and gain access to secret software. The FBI do not have to be trusted with the key.</p>
+
+<p>Secondly, and much more importantly, this would <strong>create a legal precedent</strong>. But how broadly could this precedent be applied in future cases?</p>
+
+<ul>
+<li>At the very least, Apple would be required to use the software on other iPhone 5Cs recovered from other serious criminals. This is not a negative thing.</li>
+<li>Almost definitely, tech companies would now be required to use their own privalaged positions to compromise the security of <em>individual criminal&rsquo;s</em> data. This is limited to the case where the privalaged position is used against the criminal in an isolated way that doesn&rsquo;t compromise the security of innocent users.</li>
+<li>It would <em>probably not</em> mean tech companies would be legally required to install actual vulnerabilities on innocent customer&rsquo;s phones. This scenario is a farcry away from what the FBI is currently requesting, yet is the image usually invoked with the term &ldquo;backdoor&rdquo;.</li>
+</ul>
+
+
+<h2>It&rsquo;s not a backdoor</h2>
+
+<p>Tim Cook has chosen to use the term backdoor because of the strong response it would invoke. But what the FBI is asking does not require apple to compromise the security of their publically used devices, and doesn&rsquo;t even appear to require giving a master key to the FBI. I&rsquo;m unsure what the best result is for this case, but it doesn&rsquo;t seem reasonable for it to be labelled as the FBI requesting a backdoor.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2 post-meta">
+	  <h5 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2014-08-27T23:04:57+01:00" pubdate data-updated="true">Aug 27<span>th</span>, 2014</time></h5>
           <div class="row-fluid">
           
@@ -968,72 +1051,10 @@
 
     </article>
     
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2 post-meta">
-	  <h5 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2014-03-13T09:37:35+00:00" pubdate data-updated="true">Mar 13<span>th</span>, 2014</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://georgepowell.info/writing/hello-world/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/categories/blog/"><span class="badge">blog</span></a>
-          
-          <a href="/categories/octopress/"><span class="badge">octopress</span></a>
-          
-          <a href="/categories/setup/"><span class="badge">setup</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10 post-container">
-      <h1 class="link"><a href="/writing/hello-world/">Hello World!</a></h1>
-      <h3>&hellip; From the beautiful mix of technologies that make this site</h3>
-
-<p>I&rsquo;ve put off making a website for so long (I&rsquo;ve had this domain pointing to nothing for 2+ years) because I believed that if I was going to do it, I&rsquo;d do it <em>properly</em> and build the whole thing myself. But I dislike CSS and I&rsquo;ve always found more fun things to do. I&rsquo;ve finally found a few technologies cool enough for me to get excited about using, and it only took an hour to get this fancy looking site running.</p>
-
-<h2>Octopress</h2>
-
-<p><a href="https://github.com/imathis/octopress">Octopress</a> is a fantastic (free, open source) blogging platform built on <a href="https://github.com/jekyll/jekyll">Jekyll</a>: a fantastic (free, open source) static site generator that uses <a href="https://www.ruby-lang.org/en/">Ruby</a>: a simple, compact, open-source language similar to python. Pages and posts are written in <a href="http://daringfireball.net/projects/markdown/">markdown</a> (an extremely simple syntax for writing basic documents) and auto-compiled into a static site. There&rsquo;s loads of free octopress themes available at <a href="http://opthemes.com/">opthemes.com</a>. The theme on this page is <a href="https://github.com/alexgaribay/octoflat">Octoflat</a>, a minimal flat theme built using <a href="http://getbootstrap.com/">Twitter Bootstrap</a> &ndash; which, finally, is a large front-end web development library which makes it much easier to build functional good looking sites. Beautiful! It&rsquo;d have taken me years to build this <em>the proper way</em>.</p>
-
-<h2>Heroku</h2>
-
-<p><a href="https://www.heroku.com/">Heroku</a> is a hosting website that supports ruby apps and deploying with a &lsquo;git push heroku master&rsquo;. Couldn&rsquo;t be simpler.</p>
-
-<p>This website&rsquo;s sourcecode is available (complete with all posts in markdown) on <a href="https://github.com/georgepowell">my GitHub page</a>, but if you want to make a copycat of some sort you&rsquo;d be best working from the octopress default template directly.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
   
   <div class="pagination">
+    
+    <a class="prev" href="/writing/page/2/">&larr; Older</a>
     
 
     
@@ -1046,7 +1067,7 @@
       <div class="row-fluid">
         <footer class="footer-page" role="contentinfo">
           <p>
-  Copyright &copy; 2014 - George Powell -
+  Copyright &copy; 2016 - George Powell -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
 </p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | georgepowell.info]]></title>
   <link href="http://georgepowell.info/categories/blog/atom.xml" rel="self"/>
   <link href="http://georgepowell.info/"/>
-  <updated>2014-09-02T22:04:51+01:00</updated>
+  <updated>2016-02-19T01:03:41+00:00</updated>
   <id>http://georgepowell.info/</id>
   <author>
     <name><![CDATA[George Powell]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Has Apple really been asked to write a backdoor?]]></title>
+    <link href="http://georgepowell.info/writing/has-apple-really-been-asked-to-write-a-backdoor/"/>
+    <updated>2016-02-18T22:43:53+00:00</updated>
+    <id>http://georgepowell.info/writing/has-apple-really-been-asked-to-write-a-backdoor</id>
+    <content type="html"><![CDATA[<p>Tim Cook <a href="http://www.apple.com/customer-letter/">released a statement today</a> objecting to <a href="https://assets.documentcloud.org/documents/2714005/SB-Shooter-Order-Compelling-Apple-Asst-iPhone.pdf">an FBI court order</a> they recieved related to the San Bernardino shootings. The open letter claims the FBI is asking them to build a backdoor to their iOS operating system:</p>
+
+<blockquote><p>The government suggests this tool could only be used once, on one phone. But that’s simply not true. Once created, the technique could be used over and over again, on any number of devices. In the physical world, it would be the equivalent of a master key, capable of opening hundreds of millions of locks — from restaurants and banks to stores and homes. No reasonable person would find that acceptable.</p></blockquote>
+
+<p>My initial reaction to reading this was confusion. The term &ldquo;backdoor&rdquo; usually refers to a security <em>vulnerability</em> purposefully placed in software, indended to be exploited later by the parties aware of it. So is this suggesting iOS already has a backdoor that the government wants access to? Are apple being asked to <em>build</em> a backdoor into iOS in an update?</p>
+
+<p><a href="https://blog.trailofbits.com/2016/02/17/apple-can-comply-with-the-fbi-court-order/">Neither</a>. The encryption software built into the iPhones in question (5C) appears to be uncrackable by both the FBI and Apple, and the FBI are not suggesting Apple release any new software to the general public. They are only concered with breaking the pin code on a specific device, and the only option available to bypass the security protections on the phone is to install <em>new software</em> on the device which <em>removes those protections completely</em>. And since the phone requires apple to digitally sign this new software, <strong>Apple has to create the software</strong>.</p>
+
+<h2>The software would be a master key</h2>
+
+<p>The point on which I agree with Apple is that this software would certainly be equivalent to an <strong>iPhone 5C master key</strong>. However Apple, by having the ability to sign arbitrary software updates, have <strong>always</strong> had the master key. If it&rsquo;s Apple you wanted to keep the master key from, <strong>well they&rsquo;ve been able to create it all along</strong>.</p>
+
+<p>So how about keeping the master key away from the FBI? That&rsquo;s certainly a valid concern. But the court order specifically suggests that the compromised iPhone and software <em>would never need to leave Apple&rsquo;s headquarters</em>:</p>
+
+<blockquote><p>&hellip; Apple shall provide the government with remote access to the SUBJECT DEVICE through a computer allowing the government to conduct passcode recovery analysis.</p></blockquote>
+
+<h2>It&rsquo;s all about the precedent</h2>
+
+<p>So let&rsquo;s say Apple create the master key. They install it on the device and give the FBI remote access. What&rsquo;s changed?</p>
+
+<p>Firstly, the master key now <em>exists</em>. This is of course not an ideal situation, but it can be kept in the hands of the organisation we already trust, and presumably locked down using similar mechanisms they secure their own private keys with. Due to this, normal iPhone 5C users are not subjected to weakened security. Gaining access to this master key is not as simple as exploiting a backdoor. They would need to infiltrate Apple and gain access to secret software. The FBI do not have to be trusted with the key.</p>
+
+<p>Secondly, and much more importantly, this would <strong>create a legal precedent</strong>. But how broadly could this precedent be applied in future cases?</p>
+
+<ul>
+<li>At the very least, Apple would be required to use the software on other iPhone 5Cs recovered from other serious criminals. This is not a negative thing.</li>
+<li>Almost definitely, tech companies would now be required to use their own privalaged positions to compromise the security of <em>individual criminal&rsquo;s</em> data. This is limited to the case where the privalaged position is used against the criminal in an isolated way that doesn&rsquo;t compromise the security of innocent users.</li>
+<li>It would <em>probably not</em> mean tech companies would be legally required to install actual vulnerabilities on innocent customer&rsquo;s phones. This scenario is a farcry away from what the FBI is currently requesting, yet is the image usually invoked with the term &ldquo;backdoor&rdquo;.</li>
+</ul>
+
+
+<h2>It&rsquo;s not a backdoor</h2>
+
+<p>Tim Cook has chosen to use the term backdoor because of the strong response it would invoke. But what the FBI is asking does not require apple to compromise the security of their publically used devices, and doesn&rsquo;t even appear to require giving a master key to the FBI. I&rsquo;m unsure what the best result is for this case, but it doesn&rsquo;t seem reasonable for it to be labelled as the FBI requesting a backdoor.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ridiculously succinct array manipulation in javascript]]></title>
@@ -436,37 +478,6 @@
 <p>Science and technology are hailed by some as an ultimate solution to many of life’s problems, but technology provides indiscriminate power – neither intrinsically positive nor negative. History has shown power only leads to prosperity when placed into the right hands; the internet has revolutionised the free press, but nuclear weapons are a constant ongoing threat to world peace.</p>
 
 <p><strong>The robots are coming</strong>, and although science will be responsible for their arrival, it will not guide us on how they should be used. Nobody can predict the eventual consequences of autonomous robotics spreading into our society, but as I long as I have the choice, <strong>I’d like to be on their side</strong>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Maths ain't magic]]></title>
-    <link href="http://georgepowell.info/writing/maths-aint-magic/"/>
-    <updated>2014-04-16T23:23:56+01:00</updated>
-    <id>http://georgepowell.info/writing/maths-aint-magic</id>
-    <content type="html"><![CDATA[<h1>Imaginary numbers and the nature of mathematics</h1>
-
-<p>I first heard of imaginary numbers when someone showed me the <a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a>:</p>
-
-<p><img src="https://lh4.googleusercontent.com/-nnOUsGwmsEw/AAAAAAAAAAI/AAAAAAAAAAA/xgyUbcFMo6g/photo.jp" alt="Mandelbrot visualisation" /></p>
-
-<p>They described it to me:</p>
-
-<blockquote><p>The x axis is for the real numbers, and the y axis is for the imaginary numbers. The colour of each pixel is determined by the properties of the imaginary and real numbers it represents.</p></blockquote>
-
-<p>My reaction was confusion, as it should have been. That picture sure doesn&rsquo;t look imaginary. And how can these numbers exist on a computer if they&rsquo;re imaginary? Maybe I&rsquo;m not smart enough to understand, maybe it&rsquo;s a concept only accessible to the minds of mathematitions. What are imaginary numbers?</p>
-
-<blockquote><p>Well&hellip; They&rsquo;re <em>made up</em> numbers that don&rsquo;t really exist like normal numbers do. There&rsquo;s <strong>no</strong> number that can be squared into a negative number, so we make up the imaginary numbers!</p></blockquote>
-
-<p>I learnt to program in my teens and when I <a href="http://www.newgrounds.com/portal/view/501340">wrote my own mandelbrot set visualiser</a> I realised it doesn&rsquo;t really need <em>imaginary-made-up</em> numbers after all. All it needs is two standard real numbers and a formula.</p>
-
-<p>What&rsquo;s &lsquo;imaginary&rsquo; about imaginary numbers then? Well &lsquo;real&rsquo; negative numbers don&rsquo;t have &lsquo;real&rsquo; square roots, so we call their roots &lsquo;imaginary&rsquo;. It&rsquo;s a <em>name</em>. Are they more imaginary that the &lsquo;real&rsquo; numbers? No. You don&rsquo;t need a special type of calculator or a special kind of pen to calculate with imaginary numbers. It&rsquo;s really not the best naming decision: calling a fundamental and useful concept &lsquo;imaginary&rsquo; scares and confuses people away from trying to understand it. The crux to understanding imaginary numbers is to realise how normal and unimaginary they really are.</p>
-
-<p>Mathematics studies <em>formal abstractions</em> &ndash; mental constructions that have been defined so carefully and unambiguously that their properties become objective. 1, 2, 3 and the rest of the counting numbers, they&rsquo;re all abstractions: concepts we create to categorise, percieve and understand the world. We use abstractions to represent things, and whether abstractions are &lsquo;real&rsquo; or not doesn&rsquo;t even matter; <em>they&rsquo;re all as real or unreal as each other</em>. <strong>Imaginary numbers and real numbers exist equivalently as mathematical abstractions</strong>; useful tools to represent the world we live in.</p>
-
-<p>It&rsquo;s the way the mind works. We develop concepts and abstractions to represent the world and its behaviour &ndash; mathematics studies the subset of these concepts that have been formally defined. To know <em>what infinity is</em>, or <em>what an imaginary number is</em>, is really just knowing how the mind uses abstractions to represent our surroundings.</p>
-
-<p>The view that mathematics is just concepts and abstractions in our psychology is far from the only accepted philosophy. There&rsquo;s <a href="http://en.wikipedia.org/wiki/Philosophy_of_mathematics#Contemporary_schools_of_thought">plenty of schools of thought</a> around what maths is. For me, however, any <a href="http://en.wikipedia.org/wiki/Platonism">existential or borderline-spiritual</a> view of mathematical knowledge has caused more confusion and  gotten in the way of learning the actual maths.</p>
 ]]></content>
   </entry>
   
